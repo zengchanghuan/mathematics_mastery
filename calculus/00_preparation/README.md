@@ -46,8 +46,8 @@ flowchart LR
 - [x] 使用反例否定错误命题。
 - [x] 从偶数定义出发尝试直接证明。
 - [ ] 完成第 1/3/7/14 天间隔复习。
-- [ ] 配置并验证 Python、NumPy、Matplotlib 学习环境。
-- [ ] 完成一个函数图像可视化代码实验。
+- [x] 配置并验证 Python、NumPy、Matplotlib 学习环境。
+- [x] 完成一个函数图像可视化代码实验。
 
 ### 诊断结果
 
@@ -129,7 +129,14 @@ flowchart LR
 
 - 先完成 2026-08-10 的第 1 天复习，不直接查看本文件中的结论。
 - 继续训练从定义出发的证明书写。
-- 完成 Python、NumPy、Matplotlib 环境检查和第一个函数图像代码实验。
+- 继续训练函数奇偶性，并解释图像对称性与代数条件的关系。
+
+### 代码实验
+
+- 环境：Python 3.12.4、NumPy 2.5.1、Matplotlib 3.11.1。
+- 文件：[function_symmetry.py](function_symmetry.py)。
+- 内容：对比 `x^2`、`x^3` 与 `x^2 + x` 的图像，观察偶函数、奇函数和非奇非偶函数的对称性。
+- 验证：NumPy 数值断言通过，Matplotlib 成功输出 PNG 图像。
 
 ## 后续每日档案模板
 
