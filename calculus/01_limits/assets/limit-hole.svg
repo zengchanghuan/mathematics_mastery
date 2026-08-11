@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title desc">
+  <title id="title">函数在 x 等于 2 处有空点，但极限等于 4</title>
+  <desc id="desc">函数图像与直线 y 等于 x 加 2 重合，但在二逗号四处为空心点。左右两侧的函数值都趋近 4。</desc>
+  <style>
+    :root { --fg: #20242b; --muted: #6b7280; --grid: #aeb5bf; --series: #2563eb; --point: #d97706; --surface: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg: #eceff4; --muted: #b4bbc6; --grid: #657080; --series: #60a5fa; --point: #fbbf24; --surface: #1b1d21; }
+    }
+    text { fill: var(--fg); font: 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .small { font-size: 13px; fill: var(--muted); }
+    .axis, .frame { stroke: var(--grid); stroke-width: 1.5; fill: none; }
+    .guide { stroke: var(--grid); stroke-width: 1.5; stroke-dasharray: 6 6; }
+    .curve { stroke: var(--series); stroke-width: 4; fill: none; }
+  </style>
+
+  <text x="400" y="25" text-anchor="middle" font-size="20" font-weight="600">函数值不存在，但极限存在</text>
+  <rect class="frame" x="80" y="40" width="650" height="300"/>
+  <line class="axis" x1="80" y1="340" x2="730" y2="340"/>
+  <line class="axis" x1="80" y1="40" x2="80" y2="340"/>
+
+  <g class="small" text-anchor="middle">
+    <text x="80" y="365">0</text>
+    <text x="242.5" y="365">1</text>
+    <text x="405" y="365">2</text>
+    <text x="567.5" y="365">3</text>
+    <text x="730" y="365">4</text>
+  </g>
+  <g class="small" text-anchor="end">
+    <text x="68" y="344">0</text>
+    <text x="68" y="244">2</text>
+    <text x="68" y="144">4</text>
+    <text x="68" y="44">6</text>
+  </g>
+  <text x="405" y="404" text-anchor="middle">x</text>
+  <text x="20" y="190" text-anchor="middle" transform="rotate(-90 20 190)">f(x)</text>
+
+  <line class="guide" x1="405" y1="40" x2="405" y2="340"/>
+  <line class="guide" x1="80" y1="140" x2="730" y2="140"/>
+  <path class="curve" d="M80 240 L396 143"/>
+  <path class="curve" d="M414 137 L730 40"/>
+
+  <circle cx="323.75" cy="165" r="5" fill="var(--point)"/>
+  <circle cx="388.75" cy="145" r="5" fill="var(--point)"/>
+  <circle cx="421.25" cy="135" r="5" fill="var(--point)"/>
+  <circle cx="486.25" cy="115" r="5" fill="var(--point)"/>
+  <circle cx="405" cy="140" r="9" fill="var(--surface)" stroke="var(--series)" stroke-width="4"/>
+
+  <text x="423" y="126" font-weight="600">(2,4) 空心点</text>
+  <text x="715" y="130" text-anchor="end" font-weight="600">左右都趋近 4</text>
+  <text x="323.75" y="188" text-anchor="middle" class="small">x=1.5</text>
+  <text x="486.25" y="95" text-anchor="middle" class="small">x=2.5</text>
+</svg>

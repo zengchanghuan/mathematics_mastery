@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" role="img" aria-labelledby="title desc">
+  <title id="title">可去间断与跳跃间断对比</title>
+  <desc id="desc">左图的左右极限都为 4，只有函数值 10 放错位置，可以修补。右图左极限为 0，右极限为 2，不能通过修改一个点接起来。</desc>
+  <style>
+    :root { --fg: #20242b; --muted: #6b7280; --grid: #aeb5bf; --left: #2563eb; --right: #d97706; --surface: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg: #eceff4; --muted: #b4bbc6; --grid: #657080; --left: #60a5fa; --right: #fbbf24; --surface: #1b1d21; }
+    }
+    text { fill: var(--fg); font: 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .small { font-size: 13px; fill: var(--muted); }
+    .axis, .frame { stroke: var(--grid); stroke-width: 1.5; fill: none; }
+    .guide { stroke: var(--grid); stroke-width: 1.5; stroke-dasharray: 6 6; }
+    .series-a { stroke: var(--left); stroke-width: 4; fill: none; }
+    .series-b { stroke: var(--right); stroke-width: 4; fill: none; }
+  </style>
+
+  <text x="500" y="25" text-anchor="middle" font-size="20" font-weight="600">可去间断与跳跃间断</text>
+
+  <text x="250" y="56" text-anchor="middle" font-size="18" font-weight="600">可去：只错了一个点</text>
+  <rect class="frame" x="55" y="75" width="390" height="300"/>
+  <line class="axis" x1="55" y1="350" x2="445" y2="350"/>
+  <line class="axis" x1="152.5" y1="75" x2="152.5" y2="375"/>
+  <line class="series-a" x1="55" y1="300" x2="242" y2="251"/>
+  <line class="series-a" x1="258" y1="249" x2="445" y2="200"/>
+  <circle cx="250" cy="250" r="9" fill="var(--surface)" stroke="var(--left)" stroke-width="4"/>
+  <circle cx="250" cy="100" r="8" fill="var(--right)" stroke="var(--surface)" stroke-width="2"/>
+  <line class="guide" x1="250" y1="112" x2="250" y2="237"/>
+  <text x="267" y="104" font-weight="600">实际值 10</text>
+  <text x="267" y="254" font-weight="600">左右都趋近 4</text>
+  <text x="235" y="175" text-anchor="end" class="small">移动一个点即可补好</text>
+  <text x="250" y="405" text-anchor="middle">x</text>
+  <text x="22" y="225" text-anchor="middle" transform="rotate(-90 22 225)">p(x)</text>
+
+  <text x="750" y="56" text-anchor="middle" font-size="18" font-weight="600">跳跃：左右高度不同</text>
+  <rect class="frame" x="555" y="75" width="390" height="300"/>
+  <line class="axis" x1="555" y1="325" x2="945" y2="325"/>
+  <line class="axis" x1="652.5" y1="75" x2="652.5" y2="375"/>
+  <line class="series-a" x1="555" y1="325" x2="742" y2="325"/>
+  <line class="series-b" x1="758" y1="175" x2="945" y2="175"/>
+  <circle cx="750" cy="325" r="9" fill="var(--surface)" stroke="var(--left)" stroke-width="4"/>
+  <circle cx="750" cy="175" r="8" fill="var(--right)" stroke="var(--surface)" stroke-width="2"/>
+  <line class="guide" x1="750" y1="190" x2="750" y2="310"/>
+  <text x="733" y="310" text-anchor="end" font-weight="600">左极限 0</text>
+  <text x="767" y="160" font-weight="600">右极限 2</text>
+  <text x="750" y="255" text-anchor="middle" class="small">改一个点也接不上</text>
+  <text x="750" y="405" text-anchor="middle">x</text>
+  <text x="522" y="225" text-anchor="middle" transform="rotate(-90 522 225)">f(x)</text>
+</svg>
