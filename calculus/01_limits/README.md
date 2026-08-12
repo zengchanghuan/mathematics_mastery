@@ -496,6 +496,448 @@ f(x)=\frac{1}{x-2}
 
 ![函数一除以 x 在无穷远处趋向零](assets/limit-at-infinity.svg)
 
+## 2026-08-12 复习记录
+
+### 空点、竖直渐近线与水平渐近线纠错
+
+题目：
+
+\[\Large\displaystyle g(x)=\frac{x^2-4}{x^2-x-2}\]
+
+先因式分解，再约分：
+
+\[\Large\displaystyle g(x)=\frac{(x-2)(x+2)}{(x-2)(x+1)}=\frac{x+2}{x+1}\quad(x\ne2,-1)\]
+
+- \(x=2\) 对应的因子被约掉，所以是空点；空点坐标为 \((2,4/3)\)。
+- 约分后的分母在 \(x=-1\) 时为 \(0\)，所以竖直渐近线是 \(x=-1\)。
+- 分子、分母次数相同，最高次项系数之比是 \(1/1\)，所以水平渐近线是 \(y=1\)。
+
+本题错因：没有先完成约分，就开始分别判断三类对象。
+
+复习顺序：**先约分；被约掉的是空点；剩余分母的零点是竖直渐近线；最后看无穷远极限求水平渐近线。**
+
+### 被约掉的零点不能重复使用
+
+\[\Large\displaystyle h(x)=\frac{x^2-9}{x^2-2x-3}\]
+
+先因式分解并约分：
+
+\[\Large\displaystyle h(x)=\frac{(x-3)(x+3)}{(x-3)(x+1)}=\frac{x+3}{x+1}\quad(x\ne3,-1)\]
+
+- \(x=3\) 对应的因子被约掉，所以是空点。
+- 剩余分母满足 \(x+1=0\)，所以竖直渐近线是 \(x=-1\)。
+- 分子、分母次数相同，所以水平渐近线是 \(y=1\)。
+
+本题第 1、3 项正确；第 2 项把已经判为空点的 \(x=3\) 又重复当成了竖直渐近线。
+
+### 无定义点不一定是空点
+
+空点确实是函数无定义的点，但无定义的点还可能对应竖直渐近线。必须通过约分来区分：
+
+\[\Large\displaystyle p(x)=\frac{(x-4)(x+1)}{(x-4)(x-2)}=\frac{x+1}{x-2}\quad(x\ne4,2)\]
+
+- \(x=4\) 的因子被约掉，所以 \(x=4\) 是空点。
+- \(x=2\) 的因子仍留在分母，所以 \(x=2\) 是竖直渐近线。
+
+最短判断：**能约掉的无定义点是空点；约不掉并使函数爆大的是竖直渐近线。**
+
+### 斜渐近线：曲线与斜线的距离趋向零
+
+若 \(x\) 跑向无穷远时，函数 \(f(x)\) 与直线 \(y=mx+b\) 的差趋向 \(0\)，则这条直线是斜渐近线：
+
+\[\Large\displaystyle \lim_{x\to\pm\infty}\bigl[f(x)-(mx+b)\bigr]=\boldsymbol{0}\quad\Longrightarrow\quad\boldsymbol{y=mx+b}\]
+
+例：
+
+\[\Large\displaystyle f(x)=\frac{x^2+1}{x}=x+\frac1x\]
+
+随着 \(x\to\pm\infty\)，\(1/x\to0\)，所以曲线与直线 \(y=x\) 的距离趋向 \(0\)：
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=x}\]
+
+![函数 x 加一除以 x 逐渐贴近斜渐近线 y 等于 x](assets/slant-asymptote.svg)
+
+练习订正：
+
+\[\Large\displaystyle f(x)=\frac{x^2+2x+3}{x+1}=\boldsymbol{x+1}+\frac{2}{x+1}\]
+
+当 \(x\to\pm\infty\) 时，只有 \(2/(x+1)\to0\)；必须保留完整的一次式 \(x+1\)：
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=x+1}\]
+
+错因：误把一次式中的 \(x\) 一起丢掉，只保留了常数 \(1\)。口诀：**只丢趋近于零的小尾巴，商式完整保留。**
+
+第二道练习：
+
+\[\Large\displaystyle f(x)=\boldsymbol{2x-3}+\frac{5}{x+4}\]
+
+因为 \(5/(x+4)\to0\)，判断出的斜线完全正确。渐近线应规范写成：
+
+\[\Large\displaystyle \boldsymbol{y=2x-3}\]
+
+记号区别：\(f(x)\) 表示原函数，\(y=2x-3\) 表示它逐渐贴近的直线。
+
+#### 如何做多项式除法
+
+例：
+
+\[\Large\displaystyle f(x)=\frac{x^2+3x+5}{x+1}\]
+
+1. 先算首项：\(x^2\div x=x\)。
+2. 减去 \(x(x+1)=x^2+x\)，剩下 \(2x+5\)。
+3. 再算首项：\(2x\div x=2\)。
+4. 减去 \(2(x+1)=2x+2\)，余数为 \(3\)。
+
+因此：
+
+\[\Large\displaystyle f(x)=\boldsymbol{x+2}+\frac{3}{x+1}\quad\Longrightarrow\quad\text{斜渐近线为 }\boldsymbol{y=x+2}\]
+
+##### 卡点：不会把分式拆成“一次式＋小尾巴”
+
+这不是斜渐近线概念的问题，而是多项式除法还不熟。先用当前题的简便方法理解：**拆项就是把分子凑成分母的倍数加余数。**
+
+\[\Large\displaystyle f(x)=\frac{x^2+4x+7}{x+2}\]
+
+因为：
+
+\[\Large\displaystyle \boldsymbol{x^2+4x+7}=(x+2)^2+3\]
+
+所以：
+
+\[\Large\displaystyle
+\begin{aligned}
+f(x)
+&=\frac{(x+2)^2+3}{x+2}\\[4pt]
+&=\boldsymbol{x+2}+\frac{3}{x+2}
+\end{aligned}
+\]
+
+其中 \(3\) 就是除不尽后剩下的余数。随着 \(x\to\pm\infty\)，小尾巴 \(3/(x+2)\to0\)，所以：
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=x+2}\]
+
+当前口诀：**先让分子出现分母，再把多出来的部分写成余数。**
+
+最小拆项练习已独立答对：
+
+\[\Large\displaystyle \boldsymbol{x^2+6x+11}=(x+3)^2+\boldsymbol{2}\]
+
+把它放回分式：
+
+\[\Large\displaystyle \frac{x^2+6x+11}{x+3}=\boldsymbol{x+3}+\frac{2}{x+3}\]
+
+因此小尾巴趋近于 \(0\) 后，斜渐近线为 \(\boldsymbol{y=x+3}\)。
+
+负号拆项练习：
+
+\[\Large\displaystyle \boldsymbol{x^2-4x+7}=(x-2)^2+\boldsymbol{3}\]
+
+余数 \(3\) 判断正确。放回分式后：
+
+\[\Large\displaystyle
+\frac{x^2-4x+7}{x-2}
+=\boldsymbol{x-2}+\frac{3}{x-2}
+\]
+
+- \(x-2\) 是商式，必须完整保留。
+- \(3\) 是余数，进入小尾巴 \(3/(x-2)\)。
+- 当 \(x\to\pm\infty\) 时，小尾巴趋近于 \(0\)。
+
+所以斜渐近线是：
+
+\[\Large\displaystyle \boldsymbol{y=x-2}\]
+
+错因：把余数 \(3\) 当成了渐近线。判断规则：**渐近线取商式，不取余数。**
+
+即时辨认练习：
+
+\[\Large\displaystyle f(x)=\boldsymbol{3x+4}-\frac{7}{x-1}\]
+
+当 \(x\to\pm\infty\) 时：
+
+\[\Large\displaystyle -\frac{7}{x-1}\to0\]
+
+所以必须保留当前题中的一次式：
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=3x+4}\]
+
+错因：直接沿用了上一题的 \(y=x-2\)，没有重新读取当前表达式。修正步骤：**先圈出当前题中趋近于零的小尾巴，再抄下剩余的一次式。**
+
+拆步练习：
+
+\[\Large\displaystyle f(x)=\boldsymbol{-2x+5}+\frac{1}{x+6}\]
+
+第一步已独立答对：小尾巴是
+
+\[\Large\displaystyle \boldsymbol{\frac{1}{x+6}}\to0\]
+
+下一步只需删去小尾巴，完整抄下剩余的一次式。
+
+第二步也已独立答对：
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=-2x+5}\]
+
+结论：在拆步提示下已经能正确完成“找小尾巴 → 保留一次式”，还需要一道无拆步提示的变式来确认是否稳定。
+
+无拆步提示的变式已独立答对：
+
+\[\Large\displaystyle f(x)=\boldsymbol{4x-1}-\frac{6}{x+2}\]
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=4x-1}\]
+
+结论：已经能独立识别“拆好后的商式＋小尾巴”；原始分式的多项式除法仍需练习。
+
+#### 通用拆法：多项式除法
+
+当分子不能方便地凑成平方时，重复做“首项相除 → 乘回去 → 相减”。
+
+\[\Large\displaystyle f(x)=\frac{2x^2+x+4}{x+1}\]
+
+1. 首项相除：\(2x^2\div x=2x\)。
+2. 乘回并相减：\((2x^2+x+4)-(2x^2+2x)=-x+4\)。
+3. 再除一次：\((-x)\div x=-1\)。
+4. 乘回并相减：\((-x+4)-(-x-1)=5\)，所以余数是 \(5\)。
+
+因此：
+
+\[\Large\displaystyle f(x)=\boldsymbol{2x-1}+\frac{5}{x+1}\]
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=2x-1}\]
+
+多项式除法练习：
+
+\[\Large\displaystyle f(x)=\frac{x^2+x+5}{x-1}\]
+
+已独立完成每一步：
+
+1. 首项相除：\(x^2\div x=x\)。
+2. 乘回并相减：\((x^2+x+5)-(x^2-x)=2x+5\)。
+3. 再除一次：\(2x\div x=2\)。
+4. 乘回并相减：\((2x+5)-(2x-2)=7\)，余数为 \(7\)。
+
+因此：
+
+\[\Large\displaystyle f(x)=\boldsymbol{x+2}+\frac{7}{x-1}\]
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=x+2}\]
+
+##### 与 Euclidean algorithm 的关系
+
+多项式除法遵循：
+
+\[\Large\displaystyle \boldsymbol{A(x)=B(x)Q(x)+R(x)},\qquad \deg R<\deg B\]
+
+本题只是完成了一次除法，得到商式 \(Q(x)\) 和余数 \(R(x)\)。
+
+Euclidean algorithm（欧几里得算法）会不断重复这种除法，用上一轮的除数和余数继续相除，直到余数为 \(0\)，目的是求最大公因式。
+
+所以：**当前使用的是多项式欧几里得除法，也是欧几里得算法反复使用的基本步骤；但不是完整的欧几里得算法。**
+
+##### 照片练习：计算已经完成，卡在结果的重新组合
+
+\[\Large\displaystyle f(x)=\frac{2x^2-3x+4}{x-2}\]
+
+照片中的计算全部正确：
+
+1. \(2x^2\div x=2x\)，得到商的第一项 \(2x\)。
+2. 相减后得到 \(x+4\)。
+3. \(x\div x=1\)，得到商的第二项 \(1\)。
+4. 最后相减得到余数 \(6\)。
+
+![多项式除法中把两轮商和余数组合回原分式](assets/polynomial-division-quotient-remainder.svg)
+
+把两轮得到的商合并：
+
+\[\Large\displaystyle \boldsymbol{Q(x)=2x+1},\qquad\boldsymbol{R(x)=6}\]
+
+先写成除法恒等式：
+
+\[\Large\displaystyle \boldsymbol{2x^2-3x+4=(x-2)(2x+1)+6}\]
+
+再除以 \(x-2\)：
+
+\[\Large\displaystyle f(x)=\boldsymbol{2x+1}+\frac{6}{x-2}\]
+
+因此斜渐近线为：
+
+\[\Large\displaystyle \boldsymbol{y=2x+1}\]
+
+卡点判断：不是不会做多项式除法，而是不熟悉最后的格式。记住：**原分式＝商＋余数／原分母。**
+
+##### 负号订正：减去负式子时括号内全部变号
+
+练习：
+
+\[\Large\displaystyle f(x)=\frac{x^2-2x+5}{x+1}\]
+
+前两轮正确得到商式 \(x-3\)，最后需要计算：
+
+\[\Large\displaystyle (-3x+5)-(-3x-3)\]
+
+括号前是减号，因此括号内两项都要变号：
+
+\[\Large\displaystyle
+\begin{aligned}
+(-3x+5)-(-3x-3)
+&=-3x+5+3x+3\\[4pt]
+&=\boldsymbol{8}
+\end{aligned}
+\]
+
+错答 \(-6x+8\) 的原因：没有正确处理 \(-(-3x)=+3x\)。口诀：**减去一个括号，括号内每一项都变号。**
+
+所以完整拆式为：
+
+\[\Large\displaystyle f(x)=\boldsymbol{x-3}+\frac{8}{x+1}\]
+
+订正后已正确判断：
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=x-3}\]
+
+##### 无拆步提示的多项式除法通过
+
+\[\Large\displaystyle f(x)=\frac{2x^2+5x+1}{x+2}\]
+
+![独立完成二次多项式除以一次多项式并求斜渐近线](assets/slant-asymptote-independent-division.jpg)
+
+独立计算过程正确：
+
+1. \(2x^2\div x=2x\)。
+2. 相减得到 \(x+1\)。
+3. \(x\div x=1\)。
+4. 最后相减得到余数 \(-1\)。
+
+因此商和余数分别是：
+
+\[\Large\displaystyle \boldsymbol{Q(x)=2x+1},\qquad\boldsymbol{R(x)=-1}\]
+
+完整拆式：
+
+\[\Large\displaystyle f(x)=\boldsymbol{2x+1}-\frac{1}{x+2}\]
+
+小尾巴趋近于 \(0\)，所以：
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=2x+1}\]
+
+结论：已经能在无拆步提示下完成一次二次式除以一次式，并正确处理负余数；仍需间隔复测确认是否稳定。
+
+##### 无穷小的准确表述
+
+回答“\(-1\) 被无穷小了”意思接近，但对象不准确：常数 \(-1\) 始终是 \(-1\)，不会变小。趋近于 \(0\) 的是整个分式：
+
+\[\Large\displaystyle \boldsymbol{-\frac{1}{x+2}\to0}\qquad(x\to\pm\infty)\]
+
+原因是分子固定为 \(-1\)，而分母的绝对值越来越大，所以整个分式越来越接近 \(0\)。
+
+准确说法：**余数仍为 \(-1\)，但“余数除以原分母”形成的小尾巴是无穷小。**
+
+符号辨认练习：
+
+\[\Large\displaystyle 5-\frac{3}{x-4}\]
+
+回答 \(3/(x-4)\) 已经找对了分式部分，但漏掉了原式中属于这一项的负号。完整的小尾巴是：
+
+\[\Large\displaystyle \boldsymbol{-\frac{3}{x-4}}\to0\]
+
+注意：\(3/(x-4)\) 和 \(-3/(x-4)\) 的极限都为 \(0\)，但抄写“原式中的完整一项”时必须保留正负号。
+
+再次辨认：
+
+\[\Large\displaystyle -2x+7+\frac4{x+1}\]
+
+已经正确指出完整小尾巴为：
+
+\[\Large\displaystyle \boldsymbol{+\frac4{x+1}}\to0\]
+
+删去小尾巴后，已正确判断：
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=-2x+7}\]
+
+结论：已经能独立完成“辨认带符号的小尾巴 → 完整保留一次式”两步。
+
+##### 斜渐近线综合复测通过
+
+\[\Large\displaystyle f(x)=\frac{3x^2-x+5}{x+1}\]
+
+![独立完成斜渐近线综合复测](assets/slant-asymptote-comprehensive-check.jpg)
+
+无拆步提示下独立完成：
+
+1. 首项相除得到 \(3x\)，相减后得到 \(-4x+5\)。
+2. 第二次相除得到 \(-4\)，最后余数为 \(9\)。
+3. 商、余数和完整拆式均正确：
+
+\[\Large\displaystyle \boldsymbol{Q(x)=3x-4},\qquad\boldsymbol{R(x)=9}\]
+
+\[\Large\displaystyle f(x)=\boldsymbol{3x-4}+\frac9{x+1}\]
+
+因此：
+
+\[\Large\displaystyle \text{斜渐近线为 }\boldsymbol{y=3x-4}\]
+
+反向验算：
+
+\[\Large\displaystyle (x+1)(3x-4)+9=3x^2-x+5\]
+
+结论：本次已经能无提示完成“多项式除法 → 商余式 → 小尾巴趋零 → 斜渐近线”，但需要间隔复测后再判断是否长期掌握。
+
+分式函数的直接求法：当分子次数恰好比分母次数高 \(1\) 时，做多项式除法；所得商式通常就是斜渐近线，余式除以分母的部分会趋向 \(0\)。
+
+### 三种渐近线的统一理解
+
+![竖直、水平与斜渐近线的统一比较](assets/three-asymptotes.svg)
+
+三种渐近线不是三个互不相干的公式。它们都在回答同一个问题：**当 \(x\) 按指定方向移动时，函数图像越来越贴近哪一条直线？**
+
+#### 第一步：先看 \(x\) 往哪里走
+
+**竖直渐近线：\(x\) 靠近一个具体数 \(a\)。**
+
+\[\Large\displaystyle x\to a,\quad |f(x)|\to\infty
+\quad\Longrightarrow\quad
+\text{竖直渐近线 }\boldsymbol{x=a}\]
+
+记忆：**输入卡在某个数附近，输出爆掉。**
+
+**水平渐近线：\(x\) 跑向正无穷或负无穷。**
+
+\[\Large\displaystyle x\to\pm\infty,\quad f(x)\to L
+\quad\Longrightarrow\quad
+\text{水平渐近线 }\boldsymbol{y=L}\]
+
+记忆：**输入跑得很远，输出稳定在一个数附近。**
+
+**斜渐近线：\(x\) 也跑向正无穷或负无穷，但图像贴近一条斜线。**
+
+\[\Large\displaystyle x\to\pm\infty,\quad f(x)-(mx+b)\to0
+\quad\Longrightarrow\quad
+\text{斜渐近线 }\boldsymbol{y=mx+b}\]
+
+记忆：**输入跑得很远，曲线与斜线的差变成 \(0\)。**
+
+#### 分式函数的直接求法
+
+- 竖直：**先约分**；令约分后仍留在分母中的因式等于 \(0\)，并确认分子不为 \(0\)。
+- 水平：比较分子与分母的最高次数。
+  - 分子次数较低：\(\boldsymbol{y=0}\)。
+  - 次数相同：\(\boldsymbol{y=\text{最高次项系数之比}}\)。
+  - 分子次数较高：没有水平渐近线。
+- 斜线：分子次数恰好比分母高 \(1\) 时做多项式除法，**商式就是斜渐近线**。
+
+统一检查顺序：**先约分排除空点 → 看有限位置是否爆掉 → 再看无穷远处贴近横线还是斜线。**
+
+### 闭卷综合复测通过
+
+\[\Large\displaystyle g(x)=\frac{x^2+x-6}{x^2-4}=\frac{(x+3)(x-2)}{(x-2)(x+2)}=\frac{x+3}{x+2}\quad(x\ne2,-2)\]
+
+独立判断结果全部正确：
+
+- 空点：\(x=2\)。
+- 竖直渐近线：\(x=-2\)。
+- 水平渐近线：\(y=1\)。
+
+结论：已经能在无提示条件下按“因式分解 → 约分 → 分类”的顺序完成基础综合题。
+
 ## 当前掌握状态
 
 - [x] 能区分函数值与极限值。
@@ -506,14 +948,18 @@ f(x)=\frac{1}{x-2}
 - [ ] 能独立完成常见代数型极限计算。
 - [x] 能使用直接代入和基本运算法则计算基础极限。
 - [ ] 能在无提示时稳定完成因式分解与共轭有理化。
-- [x] 能在基础分式函数中区分竖直渐近线与水平渐近线。
-- [ ] 能无提示地同时判断空点、竖直渐近线和水平渐近线。
+- [x] 能在当前练习中区分空点、竖直渐近线与水平渐近线。
+- [ ] 能在间隔复习后仍独立算出竖直渐近线与水平渐近线。
+- [x] 能在当前练习中用多项式除法求斜渐近线。
+- [ ] 能在间隔复习后仍独立求出斜渐近线。
 
 
 ## 下次学习起点
 - 闭卷复述“\(x\) 靠近一个数、\(y\) 爆掉，是竖直；\(x\) 跑远、\(y\) 稳住，是水平”。
 - 复习一次 \(x\to-\infty\) 时的符号与同次数系数之比。
 - 无提示复习一道因式分解或共轭有理化题。
+- 2026-08-14：闭卷复习一道竖直渐近线与水平渐近线综合题。
+- 2026-08-19：混合复习空点、竖直渐近线与水平渐近线。
 
 
 

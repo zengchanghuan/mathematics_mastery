@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760" role="img" aria-labelledby="title desc">
+  <title id="title">多项式除法：从计算结果得到商式和余数</title>
+  <desc id="desc">展示二次多项式除以一次多项式的四步计算，并说明商为二 x 加一、余数为六。</desc>
+  <style>
+    :root { color-scheme: light dark; }
+    .bg { fill: #fffaf2; }
+    .card { fill: #ffffff; stroke: #d9c8ae; stroke-width: 2; }
+    .text { fill: #241b12; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .muted { fill: #6f6255; }
+    .accent { fill: #b84a00; }
+    .good { fill: #087f5b; }
+    .formula { font-family: "Times New Roman", "STIX Two Math", serif; font-weight: 700; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #171717; }
+      .card { fill: #222222; stroke: #574a3b; }
+      .text { fill: #f7ede2; }
+      .muted { fill: #c5b7a7; }
+      .accent { fill: #ff9f43; }
+      .good { fill: #63e6be; }
+    }
+  </style>
+
+  <rect class="bg" width="1080" height="760" rx="24"/>
+  <text class="text" x="54" y="72" font-size="34" font-weight="800">你已经把多项式除法算完了</text>
+  <text class="text formula" x="54" y="124" font-size="31">f(x) = (2x² − 3x + 4) ÷ (x − 2)</text>
+
+  <rect class="card" x="46" y="158" width="988" height="330" rx="18"/>
+  <text class="text" x="76" y="207" font-size="25" font-weight="700">第一轮</text>
+  <text class="text formula" x="250" y="207" font-size="29">2x² ÷ x = <tspan class="accent">2x</tspan></text>
+  <text class="text formula" x="250" y="250" font-size="29">(2x² − 3x + 4) − (2x² − 4x) = <tspan class="good">x + 4</tspan></text>
+  <line x1="76" y1="279" x2="1004" y2="279" stroke="#967f66" stroke-width="2" opacity="0.5"/>
+  <text class="text" x="76" y="329" font-size="25" font-weight="700">第二轮</text>
+  <text class="text formula" x="250" y="329" font-size="29">x ÷ x = <tspan class="accent">1</tspan></text>
+  <text class="text formula" x="250" y="372" font-size="29">(x + 4) − (x − 2) = <tspan class="good">6</tspan></text>
+  <line x1="76" y1="402" x2="1004" y2="402" stroke="#967f66" stroke-width="2" opacity="0.5"/>
+  <text class="text" x="76" y="451" font-size="27" font-weight="800">把两轮的答案收集起来：</text>
+  <text class="text formula accent" x="484" y="451" font-size="31">商 = 2x + 1</text>
+  <text class="text formula good" x="760" y="451" font-size="31">余数 = 6</text>
+
+  <rect class="card" x="46" y="520" width="988" height="184" rx="18"/>
+  <text class="text muted" x="76" y="566" font-size="24">除法结果永远写成：原分式 = 商 + 余数 ÷ 原分母</text>
+  <text class="text formula" x="76" y="625" font-size="36">f(x) = <tspan class="accent">2x + 1</tspan> + <tspan class="good">6 / (x − 2)</tspan></text>
+  <text class="text" x="76" y="675" font-size="27" font-weight="800">小尾巴趋近于 0，所以斜渐近线：</text>
+  <text class="text formula accent" x="614" y="675" font-size="37">y = 2x + 1</text>
+</svg>

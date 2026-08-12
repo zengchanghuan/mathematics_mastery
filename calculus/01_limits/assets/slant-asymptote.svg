@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">函数 x 加一除以 x 逐渐贴近斜渐近线 y 等于 x</title>
+  <desc id="desc">随着 x 增大，函数与直线 y 等于 x 之间的竖直距离一除以 x 趋向零。</desc>
+  <style>
+    .bg{fill:#fff}.plot{fill:#f8fafc;stroke:#cbd5e1}.axis{stroke:#64748b}.text{fill:#111827;font-family:system-ui,sans-serif}.curve{stroke:#2563eb}.line{stroke:#dc2626}.gap{stroke:#16a34a}
+    @media (prefers-color-scheme:dark){.bg{fill:#18181b}.plot{fill:#27272a;stroke:#52525b}.axis{stroke:#a1a1aa}.text{fill:#fafafa}.curve{stroke:#60a5fa}.line{stroke:#fb7185}.gap{stroke:#4ade80}}
+  </style>
+  <rect class="bg" width="900" height="520"/>
+  <text class="text" x="450" y="38" text-anchor="middle" font-size="25" font-weight="700">曲线为什么会贴近斜线 y=x？</text>
+  <rect class="plot" x="90" y="65" width="720" height="350" stroke-width="2"/>
+  <line class="axis" x1="90" y1="415" x2="820" y2="415" stroke-width="2"/>
+  <line class="axis" x1="90" y1="65" x2="90" y2="425" stroke-width="2"/>
+  <text class="text" x="826" y="421" font-size="18">x</text>
+  <text class="text" x="76" y="82" font-size="18">y</text>
+
+  <line class="line" x1="90" y1="415" x2="790" y2="82" stroke-width="5" stroke-dasharray="12 9"/>
+  <path class="curve" d="M108 348 C142 342 180 325 230 298 C345 238 490 169 790 81" fill="none" stroke-width="6"/>
+
+  <line class="gap" x1="265" y1="332" x2="265" y2="315" stroke-width="5"/>
+  <line class="gap" x1="615" y1="165" x2="615" y2="160" stroke-width="5"/>
+  <text class="text" x="258" y="355" text-anchor="end" font-size="18">距离 = 1/x</text>
+  <text class="text" x="620" y="185" font-size="18">距离更小</text>
+
+  <text class="text" x="610" y="116" font-size="19" font-weight="700">f(x)=x+1/x</text>
+  <text class="text" x="600" y="238" font-size="19" font-weight="700">斜渐近线 y=x</text>
+
+  <rect x="150" y="445" width="600" height="48" rx="8" fill="#eff6ff"/>
+  <text x="450" y="476" text-anchor="middle" font-family="system-ui,sans-serif" font-size="21" font-weight="700" fill="#1e3a8a">x 越大，1/x 越接近 0，曲线与斜线的距离越接近 0</text>
+</svg>
