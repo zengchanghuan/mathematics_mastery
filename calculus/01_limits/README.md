@@ -926,6 +926,129 @@ Euclidean algorithm（欧几里得算法）会不断重复这种除法，用上�
 
 统一检查顺序：**先约分排除空点 → 看有限位置是否爆掉 → 再看无穷远处贴近横线还是斜线。**
 
+#### 竖直渐近线的分母为什么看 \(0\)
+
+以
+
+\[\Large\displaystyle \boldsymbol{f(x)=\frac{1}{x-3}}\]
+
+为例。当 \(x\to3\) 时：
+
+\[\Large\displaystyle \boldsymbol{x-3\to0}\]
+
+这一步已经独立回答正确。它表示分母会变成一个**绝对值越来越小、但不等于 \(0\)** 的数。
+
+从左边接近 \(3\)：
+
+\[\Large\displaystyle \boldsymbol{f(2.9)=\frac{1}{-0.1}=-10},\qquad
+\boldsymbol{f(2.99)=\frac{1}{-0.01}=-100}\]
+
+所以：
+
+\[\Large\displaystyle \boldsymbol{x\to3^-\quad\Longrightarrow\quad f(x)\to-\infty}\]
+
+从右边接近 \(3\)：
+
+\[\Large\displaystyle \boldsymbol{f(3.01)=\frac{1}{0.01}=100}\]
+
+因此右侧会趋向正无穷：
+
+\[\Large\displaystyle \boldsymbol{x\to3^+\quad\Longrightarrow\quad f(x)\to+\infty}\]
+
+结论：分母从两侧趋近 \(0\) 时，函数值的绝对值不断变大，图像会贴近竖线：
+
+\[\Large\displaystyle \boxed{\boldsymbol{x=3}}\]
+
+这就是“令约分后仍留在分母中的因式等于 \(0\)”能够找到竖直渐近线的原因。注意：**分母等于 \(0\) 只是候选位置；还要先约分，并确认函数确实爆大。**
+
+即时迁移练习：
+
+\[\Large\displaystyle \boldsymbol{g(x)=\frac{1}{x+2}}\]
+
+能够独立判断竖直渐近线为 \(\boldsymbol{x=-2}\)。
+
+反例：
+
+\[\Large\displaystyle \boldsymbol{h(x)=\frac{x+2}{x+2}=1\quad(x\ne-2)}\]
+
+能够判断 \(x=-2\) 处是空点，图像其余部分为 \(y=1\)，不是竖直渐近线。
+
+综合迁移：
+
+\[\Large\displaystyle \boldsymbol{p(x)=\frac{x+2}{(x+2)(x-4)}=\frac{1}{x-4}\quad(x\ne-2,4)}\]
+
+- 空点：\(\boldsymbol{x=-2}\)。
+- 竖直渐近线：\(\boldsymbol{x=4}\)。
+- 作答时曾把 \(-2\) 输入成 \(-1\)，本人说明原计算正确，属于键盘转录错误，不记为概念或计算错误。
+
+#### 水平渐近线为什么看无穷远
+
+以
+
+\[\Large\displaystyle \boldsymbol{f(x)=\frac{2x+1}{x-3}=2+\frac{7}{x-3}}\]
+
+为例。当 \(x\to+\infty\) 时，已经独立判断：
+
+\[\Large\displaystyle \boldsymbol{\frac{7}{x-3}\to0}\]
+
+因此原函数中只有“小尾巴”消失，稳定的主体 \(2\) 留下来：
+
+\[\Large\displaystyle \boldsymbol{f(x)=2+\frac{7}{x-3}\to2}\]
+
+所以图像在无穷远处越来越贴近水平直线：
+
+\[\Large\displaystyle \boxed{\boldsymbol{y=2}}\]
+
+记忆：**求水平渐近线，是看 \(x\) 跑得很远以后，整个函数最终稳定在哪个 \(y\) 值附近。**
+
+即时迁移：
+
+\[\Large\displaystyle \boldsymbol{g(x)=3+\frac{5}{x+1}}\]
+
+无论 \(x\to+\infty\) 还是 \(x\to-\infty\)，都有：
+
+\[\Large\displaystyle \boldsymbol{\frac{5}{x+1}\to0},\qquad \boldsymbol{g(x)\to3}\]
+
+所以两个方向的水平渐近线都是 \(\boldsymbol{y=3}\)。小尾巴从正侧还是负侧趋近 \(0\)，不会改变最后稳定在 \(3\) 的结论。
+
+同次数时“最高次项系数之比”的来源也可以直接看出来。把分子、分母同时除以最高次幂 \(x\)：
+
+\[\Large\displaystyle
+\boldsymbol{\frac{2x+1}{x-3}
+=\frac{2+\frac1x}{1-\frac3x}
+\to\frac21=2}}
+\]
+
+因为 \(1/x\) 和 \(3/x\) 都会消失，最后留下的正是分子、分母最高次项的系数之比。
+
+水平渐近线的三种次数关系已经逐步验证：
+
+- 同次数：\(\frac{4x-5}{2x+7}\to\frac42=2\)，所以 \(\boldsymbol{y=2}\)。
+- 分母次数更高：\(\frac{3x+1}{x^2+4}\to0\)，所以 \(\boldsymbol{y=0}\)。
+- 分子次数更高：通常没有水平渐近线；若恰好高一次，应检查斜渐近线。
+
+斜渐近线即时提取复习：
+
+\[\Large\displaystyle \boldsymbol{\frac{x^2+1}{x+3}}\]
+
+起初忘记了分子次数高一次时应做多项式除法。经过逐步提示后，能够正确完成：
+
+\[\Large\displaystyle
+\boldsymbol{x^2\div x=x},\qquad
+\boldsymbol{(x^2+1)-(x^2+3x)=-3x+1}
+\]
+
+\[\Large\displaystyle
+\boldsymbol{-3x\div x=-3},\qquad
+\boldsymbol{(-3x+1)-(-3x-9)=10}
+\]
+
+因此：
+
+\[\Large\displaystyle \boldsymbol{\frac{x^2+1}{x+3}=x-3+\frac{10}{x+3}}\]
+
+小尾巴趋近 \(0\)，斜渐近线为 \(\boldsymbol{y=x-3}\)。本知识点能在提示下恢复，但仍需安排无提示间隔复习。
+
 ### 闭卷综合复测通过
 
 \[\Large\displaystyle g(x)=\frac{x^2+x-6}{x^2-4}=\frac{(x+3)(x-2)}{(x-2)(x+2)}=\frac{x+3}{x+2}\quad(x\ne2,-2)\]
@@ -937,6 +1060,69 @@ Euclidean algorithm（欧几里得算法）会不断重复这种除法，用上�
 - 水平渐近线：\(y=1\)。
 
 结论：已经能在无提示条件下按“因式分解 → 约分 → 分类”的顺序完成基础综合题。
+
+## 2026-08-13 学习记录
+
+### 同时求竖直渐近线与斜渐近线的顺序
+
+题目：
+
+\[\Large\displaystyle \boldsymbol{f(x)=\frac{2x^2+1}{x-1}}\]
+
+观察正确：这道题需要做多项式除法，但多项式除法只用于求**斜渐近线**。完整顺序是：
+
+1. 先看约分后的分母，求竖直渐近线。
+2. 再比较次数；分子次数恰好比分母高 \(1\)，做多项式除法求斜渐近线。
+
+\[\Large\displaystyle \boldsymbol{\text{竖直：看分母}\qquad\text{斜线：做除法}}\]
+
+### 多项式竖式除法独立完成
+
+前一晚通过视频自学多项式竖式除法后，独立完成本题：
+
+![独立完成二次多项式除以一次多项式的竖式除法](assets/polynomial-long-division-2026-08-13.jpg)
+
+计算过程正确：
+
+\[\Large\displaystyle
+\boldsymbol{\frac{2x^2+1}{x-1}=2x+2+\frac{3}{x-1}}
+\]
+
+其中商为 \(\boldsymbol{2x+2}\)，余数为 \(\boldsymbol{3}\)。反向验算：
+
+\[\Large\displaystyle
+\boldsymbol{(x-1)(2x+2)+3=2x^2+1}
+\]
+
+因此本题的斜渐近线为：
+
+\[\Large\displaystyle \boxed{\boldsymbol{y=2x+2}}\]
+
+掌握证据：能够在没有逐步提示的情况下正确使用竖式除法。后续仍需间隔复测，确认能长期提取。
+
+### 竖式除法符号复测
+
+复测题：
+
+\[\Large\displaystyle \boldsymbol{f(x)=\frac{3x^2+2x-1}{x+2}}\]
+
+![多项式竖式除法第一次相减时的符号纠错](assets/polynomial-long-division-sign-correction-2026-08-13.jpg)
+
+- 竖直渐近线 \(\boldsymbol{x=-2}\) 判断正确。
+- 商的第一项 \(\boldsymbol{3x}\) 以及乘回得到 \(\boldsymbol{3x^2+6x}\) 均正确。
+- 第一次相减时把 \(\boldsymbol{2x-6x}\) 写成了正数，导致后续商与余数一起出错。
+
+正确的第一次相减是：
+
+\[\Large\displaystyle
+\boldsymbol{(3x^2+2x-1)-(3x^2+6x)}
+\]
+
+\[\Large\displaystyle
+\boldsymbol{=3x^2+2x-1-3x^2-6x=-4x-1}
+\]
+
+错因类型：**符号运算不熟练**。修正动作：每次竖式相减都先把整行写进括号，再把减号分配给下一行的每一项。
 
 ## 当前掌握状态
 
@@ -955,6 +1141,7 @@ Euclidean algorithm（欧几里得算法）会不断重复这种除法，用上�
 
 
 ## 下次学习起点
+- 先无提示完成 \(\frac{2x^2+1}{x-1}\) 的竖直渐近线与斜渐近线，检验今天恢复的知识能否独立提取。
 - 闭卷复述“\(x\) 靠近一个数、\(y\) 爆掉，是竖直；\(x\) 跑远、\(y\) 稳住，是水平”。
 - 复习一次 \(x\to-\infty\) 时的符号与同次数系数之比。
 - 无提示复习一道因式分解或共轭有理化题。

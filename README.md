@@ -12,7 +12,8 @@
 
 这 90 天是基础框架，不等于完整覆盖《斯图尔特微积分》第 9 版。第一阶段之后继续补全一元微积分，并正式进入多元微积分。
 
-详细安排见 [learning_plan.md](learning_plan.md)。
+详细安排见 [learning_plan.md](learning_plan.md)。完整知识依赖与章节覆盖范围参考
+[calculus_learning_prerequisites.md](calculus_learning_prerequisites.md)；它作为前置知识地图使用，不替代根据实际表现调整的执行计划。
 
 ## 学习目标
 
@@ -58,6 +59,7 @@
 mathematics_mastery/
 ├── README.md
 ├── learning_plan.md
+├── calculus_learning_prerequisites.md
 ├── calculus/
 │   ├── 00_preparation/
 │   ├── 01_limits/
