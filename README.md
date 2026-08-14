@@ -15,6 +15,13 @@
 详细安排见 [learning_plan.md](learning_plan.md)。完整知识依赖与章节覆盖范围参考
 [calculus_learning_prerequisites.md](calculus_learning_prerequisites.md)；它作为前置知识地图使用，不替代根据实际表现调整的执行计划。
 
+## 从哪里开始
+
+- 开始当天训练：先读 [calculus_progress.md](calculus_progress.md)，确认当前焦点和下一轮队列。
+- 调用 AI Tutor：遵循 [calculus_tutor.md](calculus_tutor.md) 的阶段门、提示节奏和证据标准。
+- 查看长期路线：读 [learning_plan.md](learning_plan.md)，不要把未来阶段主题误当成当前任务。
+- 复习具体错因：进入当前章节笔记；现阶段为 [极限与连续](calculus/01_limits/README.md)。
+
 ## 学习目标
 
 - 建立从函数、极限到微积分的连续知识链。
@@ -59,6 +66,8 @@
 mathematics_mastery/
 ├── README.md
 ├── learning_plan.md
+├── calculus_progress.md
+├── calculus_tutor.md
 ├── calculus_learning_prerequisites.md
 ├── calculus/
 │   ├── 00_preparation/
