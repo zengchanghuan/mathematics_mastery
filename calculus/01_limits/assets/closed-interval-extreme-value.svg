@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">闭区间上的连续函数取得最大值和最小值</title>
+  <desc id="desc">连续曲线在闭区间 a 到 b 上有有限的上下界，并且分别在区间内的点 x 最小和 x 最大处取得最小值 m 和最大值 M。</desc>
+  <defs>
+    <style>
+      .axis{stroke:#64748b;stroke-width:2}.guide{stroke:#f59e0b;stroke-width:2;stroke-dasharray:8 6}.curve{fill:none;stroke:#2563eb;stroke-width:4}.dot{fill:#2563eb;stroke:#fff;stroke-width:2}.label{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a;font-size:20px}.small{font-size:17px;fill:#475569}.band{fill:#f59e0b;opacity:.1}
+      @media(prefers-color-scheme:dark){.axis{stroke:#94a3b8}.guide{stroke:#fbbf24}.curve{stroke:#60a5fa}.dot{fill:#60a5fa;stroke:#111827}.label{fill:#f8fafc}.small{fill:#cbd5e1}.band{fill:#fbbf24}}
+    </style>
+  </defs>
+  <line class="axis" x1="90" y1="350" x2="830" y2="350"/>
+  <line class="axis" x1="130" y1="385" x2="130" y2="42"/>
+  <rect class="band" x="180" y="82" width="550" height="220"/>
+  <line class="guide" x1="180" y1="82" x2="730" y2="82"/>
+  <line class="guide" x1="180" y1="302" x2="730" y2="302"/>
+  <path class="curve" d="M180 224 C245 126 315 150 355 244 C392 330 461 306 505 205 C548 108 621 83 730 176"/>
+  <circle class="dot" cx="180" cy="224" r="7"/>
+  <circle class="dot" cx="420" cy="302" r="8"/>
+  <circle class="dot" cx="620" cy="82" r="8"/>
+  <circle class="dot" cx="730" cy="176" r="7"/>
+  <text class="label" x="75" y="89" text-anchor="end">M</text>
+  <text class="label" x="75" y="309" text-anchor="end">m</text>
+  <text class="label" x="180" y="380" text-anchor="middle">a</text>
+  <text class="label" x="730" y="380" text-anchor="middle">b</text>
+  <text class="small" x="420" y="330" text-anchor="middle">最小值 m 在 x_min 处取得</text>
+  <text class="small" x="620" y="62" text-anchor="middle">最大值 M 在 x_max 处取得</text>
+  <text class="label" x="455" y="28" text-anchor="middle">连续 + 闭区间 ⇒ 有界，并且最大值、最小值都能取得</text>
+</svg>
