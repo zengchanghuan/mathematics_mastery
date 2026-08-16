@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="330" viewBox="0 0 920 330" role="img" aria-labelledby="title desc">
+  <title id="title">函数相加时切线斜率也相加</title>
+  <desc id="desc">在横坐标一处，函数 x 平方的斜率二，加上函数二 x 的斜率二，得到函数 x 平方加二 x 的斜率四。</desc>
+  <defs>
+    <style>
+      .panel{fill:#fff;stroke:#cbd5e1;stroke-width:1.5}.axis{stroke:#64748b;stroke-width:1.5}.f{fill:none;stroke:#2563eb;stroke-width:3}.g{fill:none;stroke:#ea580c;stroke-width:3}.h{fill:none;stroke:#16a34a;stroke-width:3}.tan{stroke-width:3;stroke-dasharray:7 5}.dot{stroke:#fff;stroke-width:2}.label{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a;font-size:18px}.small{font-size:15px;fill:#475569}.math{font-family:Georgia,serif;font-size:24px;font-weight:700}.op{font-family:Georgia,serif;font-size:38px;font-weight:700;fill:#334155}
+      @media (prefers-color-scheme:dark){.panel{fill:#111827;stroke:#475569}.axis{stroke:#94a3b8}.label{fill:#f8fafc}.small{fill:#cbd5e1}.op{fill:#e2e8f0}}
+    </style>
+  </defs>
+  <text x="460" y="30" text-anchor="middle" class="label math">同一个 x₀ 处：m_h = m_f + m_g</text>
+
+  <g transform="translate(20 55)">
+    <rect class="panel" width="250" height="230" rx="8"/>
+    <line class="axis" x1="28" y1="185" x2="226" y2="185"/>
+    <line class="axis" x1="70" y1="207" x2="70" y2="24"/>
+    <path class="f" d="M35 55 C75 180 125 202 215 38"/>
+    <line class="f tan" x1="120" y1="162" x2="205" y2="62"/>
+    <circle class="dot" cx="165" cy="109" r="6" fill="#2563eb"/>
+    <text x="125" y="216" text-anchor="middle" class="label">f(x)=x²</text>
+    <text x="125" y="48" text-anchor="middle" class="small">x₀=1，斜率 m_f=2</text>
+  </g>
+
+  <text x="295" y="185" text-anchor="middle" class="op">+</text>
+
+  <g transform="translate(335 55)">
+    <rect class="panel" width="250" height="230" rx="8"/>
+    <line class="axis" x1="28" y1="185" x2="226" y2="185"/>
+    <line class="axis" x1="70" y1="207" x2="70" y2="24"/>
+    <line class="g" x1="35" y1="200" x2="215" y2="36"/>
+    <line class="g tan" x1="120" y1="123" x2="205" y2="46"/>
+    <circle class="dot" cx="165" cy="82" r="6" fill="#ea580c"/>
+    <text x="125" y="216" text-anchor="middle" class="label">g(x)=2x</text>
+    <text x="125" y="48" text-anchor="middle" class="small">x₀=1，斜率 m_g=2</text>
+  </g>
+
+  <text x="610" y="185" text-anchor="middle" class="op">=</text>
+
+  <g transform="translate(650 55)">
+    <rect class="panel" width="250" height="230" rx="8"/>
+    <line class="axis" x1="28" y1="185" x2="226" y2="185"/>
+    <line class="axis" x1="70" y1="207" x2="70" y2="24"/>
+    <path class="h" d="M35 132 C78 199 125 174 215 28"/>
+    <line class="h tan" x1="116" y1="170" x2="208" y2="34"/>
+    <circle class="dot" cx="165" cy="98" r="6" fill="#16a34a"/>
+    <text x="125" y="216" text-anchor="middle" class="label">h(x)=x²+2x</text>
+    <text x="125" y="48" text-anchor="middle" class="small">x₀=1，斜率 mₕ=4</text>
+  </g>
+</svg>

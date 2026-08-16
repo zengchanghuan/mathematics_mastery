@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" role="img" aria-labelledby="title desc">
+  <title id="title">连续复利趋近自然常数 e</title>
+  <desc id="desc">数列一加一除以 n 的 n 次方从 2 开始上升，随着 n 增大逐渐靠近 e 约等于 2.71828。</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #202124; font-size: 15px; }
+    .frame, .grid { fill: none; stroke: #9aa0a6; stroke-width: 1.2; }
+    .grid, .eline { stroke-dasharray: 5 5; }
+    .curve { fill: none; stroke: #2767c5; stroke-width: 3; }
+    .eline { fill: none; stroke: #d56b19; stroke-width: 2.4; }
+    .point { fill: #2767c5; }
+    .label { font-weight: 600; }
+  </style>
+  <rect class="frame" x="70" y="40" width="620" height="310"/>
+  <line class="grid" x1="70" y1="333" x2="690" y2="333"/>
+  <line class="grid" x1="70" y1="204" x2="690" y2="204"/>
+  <line class="grid" x1="70" y1="75" x2="690" y2="75"/>
+  <line class="eline" x1="70" y1="49" x2="690" y2="49"/>
+  <path class="curve" d="M70 333 C76 265 83 215 89 182 C104 132 120 105 133 91 C170 69 260 59 380 55 C500 53 605 52 690 51"/>
+  <circle class="point" cx="70" cy="333" r="5"/>
+  <circle class="point" cx="139" cy="87" r="5"/>
+  <circle class="point" cx="690" cy="51" r="5"/>
+  <text x="54" y="338" text-anchor="end">2.0</text>
+  <text x="54" y="209" text-anchor="end">2.3</text>
+  <text x="54" y="80" text-anchor="end">2.6</text>
+  <text x="70" y="375" text-anchor="middle">1</text>
+  <text x="190" y="375" text-anchor="middle">20</text>
+  <text x="380" y="375" text-anchor="middle">50</text>
+  <text x="690" y="375" text-anchor="middle">100</text>
+  <text x="690" y="410" text-anchor="end">复利次数 n</text>
+  <text x="30" y="52">最终结果</text>
+  <text class="label" x="680" y="38" text-anchor="end">e ≈ 2.71828</text>
+  <text x="82" y="322">n=1：2</text>
+  <text x="150" y="105">n=12：2.61304</text>
+  <text x="670" y="78" text-anchor="end">n=100：2.70481</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" role="img" aria-labelledby="title desc">
+  <title id="title">夹逼定理示意图</title>
+  <desc id="desc">中间函数 x 平方乘以 sin 一除以 x 始终位于负 x 平方和 x 平方之间，三条曲线在 x 趋近零时共同趋近零。</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #202124; font-size: 15px; }
+    .axis, .frame, .guide { fill: none; stroke: #9aa0a6; stroke-width: 1.2; }
+    .guide { stroke-dasharray: 5 5; }
+    .upper { fill: none; stroke: #2767c5; stroke-width: 3; }
+    .middle { fill: none; stroke: #d56b19; stroke-width: 3; }
+    .lower { fill: none; stroke: #258650; stroke-width: 3; }
+    .label { font-weight: 600; }
+  </style>
+  <rect class="frame" x="70" y="35" width="620" height="330"/>
+  <line class="axis" x1="70" y1="200" x2="690" y2="200"/>
+  <line class="axis" x1="380" y1="35" x2="380" y2="365"/>
+  <line class="guide" x1="225" y1="35" x2="225" y2="365"/>
+  <line class="guide" x1="535" y1="35" x2="535" y2="365"/>
+  <line class="guide" x1="225" y1="118" x2="535" y2="118"/>
+  <line class="guide" x1="225" y1="282" x2="535" y2="282"/>
+  <path class="upper" d="M70 35 C165 132 265 184 380 200 C495 184 595 132 690 35"/>
+  <path class="lower" d="M70 365 C165 268 265 216 380 200 C495 216 595 268 690 365"/>
+  <path class="middle" d="M70 228 C125 174 172 139 225 136 C271 133 300 225 327 213 C344 205 354 180 365 195 C372 205 376 193 380 200 C384 207 388 195 395 205 C406 220 416 195 433 187 C460 175 489 267 535 264 C588 261 635 226 690 172"/>
+  <circle cx="380" cy="200" r="5" fill="#202124"/>
+  <text x="604" y="60" class="label">上界 h(x)=x²</text>
+  <text x="604" y="347" class="label">下界 g(x)=−x²</text>
+  <text x="98" y="151" class="label">f(x)=x²sin(1/x)</text>
+  <text x="392" y="188">共同目标 L=0</text>
+  <text x="535" y="387" text-anchor="middle">δ</text>
+  <text x="225" y="387" text-anchor="middle">−δ</text>
+  <text x="690" y="393" text-anchor="end">x</text>
+  <text x="48" y="46">y</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">介值定理图形直观</title>
+  <desc id="desc">连续函数 g(x) 等于 x 的平方减三，从点一负二连续走到点二一，因此必然在一和二之间穿过水平线 y 等于零。</desc>
+  <style>
+    .bg { fill: #fffdf8; }
+    .frame, .axis, .grid { fill: none; stroke: #c9c1b6; stroke-width: 1.5; }
+    .grid { opacity: .5; stroke-dasharray: 5 5; }
+    .curve { fill: none; stroke: #d96b24; stroke-width: 5; stroke-linecap: round; }
+    .target { fill: none; stroke: #168aad; stroke-width: 4; stroke-dasharray: 10 7; }
+    .guide { fill: none; stroke: #76695e; stroke-width: 2; stroke-dasharray: 6 6; }
+    .endpoint { fill: #d96b24; stroke: #fffdf8; stroke-width: 3; }
+    .solution { fill: #168aad; stroke: #fffdf8; stroke-width: 3; }
+    .main { fill: #241d17; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .muted { fill: #6e6258; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .formula { fill: #b64e0b; font-family: "Times New Roman", "STIX Two Math", serif; font-weight: 700; }
+    .target-text { fill: #08799b; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-weight: 700; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #171717; }
+      .frame, .axis, .grid { stroke: #554d46; }
+      .curve { stroke: #ff9f43; }
+      .target { stroke: #66d9ef; }
+      .guide { stroke: #b9aca0; }
+      .endpoint { fill: #ff9f43; stroke: #171717; }
+      .solution { fill: #66d9ef; stroke: #171717; }
+      .main { fill: #f7ede2; }
+      .muted { fill: #c4b7aa; }
+      .formula { fill: #ffb56b; }
+      .target-text { fill: #89e4f4; }
+    }
+  </style>
+
+  <rect class="bg" width="900" height="520" rx="24"/>
+  <text class="main" x="40" y="54" font-size="30" font-weight="700">介值定理：连续曲线不会跳过中间高度</text>
+  <text class="formula" x="40" y="88" font-size="22">g(x)=x²−3，区间 [1,2]</text>
+
+  <rect class="frame" x="130" y="105" width="670" height="330"/>
+  <line class="axis" x1="130" y1="252" x2="800" y2="252"/>
+  <line class="guide" x1="226" y1="105" x2="226" y2="435"/>
+  <line class="guide" x1="704" y1="105" x2="704" y2="435"/>
+  <line class="target" x1="226" y1="252" x2="704" y2="252"/>
+
+  <polyline class="curve" points="130,425 178,412 226,398 274,383 321,366 369,349 417,328 465,307 513,284 561,260 576,252 609,234 656,207 704,178 752,148 800,117"/>
+
+  <circle class="endpoint" cx="226" cy="398" r="8"/>
+  <circle class="endpoint" cx="704" cy="178" r="8"/>
+  <circle class="solution" cx="576" cy="252" r="10"/>
+
+  <text class="main" x="240" y="421" font-size="20">A(1, −2)</text>
+  <text class="main" x="686" y="160" text-anchor="end" font-size="20">B(2, 1)</text>
+  <text class="target-text" x="590" y="238" font-size="21">g(c)=0</text>
+  <text class="target-text" x="790" y="240" text-anchor="end" font-size="20">目标高度 y=0</text>
+
+  <text class="muted" x="226" y="466" text-anchor="middle" font-size="18">x=1</text>
+  <text class="muted" x="576" y="466" text-anchor="middle" font-size="18">c≈1.73</text>
+  <text class="muted" x="704" y="466" text-anchor="middle" font-size="18">x=2</text>
+  <text class="main" x="450" y="503" text-anchor="middle" font-size="21" font-weight="700">−2 &lt; 0 &lt; 1，所以至少存在 c∈(1,2)，使 g(c)=0</text>
+</svg>

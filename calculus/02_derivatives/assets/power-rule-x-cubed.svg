@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
+  <title id="title">三次函数与导函数给出的切线斜率</title>
+  <desc id="desc">三次函数 y 等于 x 的三次方在 x 等于一处的切线斜率由导函数三 x 平方给出，斜率为三。</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #202124; font-size: 15px; }
+    .frame, .axis { fill: none; stroke: #9aa0a6; stroke-width: 1.2; }
+    .curve { fill: none; stroke: #2767c5; stroke-width: 3; }
+    .tangent { stroke: #d56b19; stroke-width: 3; }
+    .point { fill: #d56b19; }
+    .label { font-weight: 600; }
+  </style>
+  <rect class="frame" x="70" y="35" width="620" height="325"/>
+  <line class="axis" x1="70" y1="198" x2="690" y2="198"/>
+  <line class="axis" x1="380" y1="35" x2="380" y2="360"/>
+  <path class="curve" d="M70 350 L132 276 L173 243 L277 203 L380 198 L483 192 L587 152 L628 120 L690 45"/>
+  <line class="tangent" x1="270" y1="360" x2="690" y2="85"/>
+  <circle class="point" cx="587" cy="152" r="6"/>
+  <text class="label" x="575" y="177" text-anchor="end">切点 (1,1)</text>
+  <text class="label" x="515" y="92">f(x)=x³</text>
+  <text class="label" x="84" y="62">切线斜率 = 3x² = 3</text>
+  <text x="70" y="405">在 x=1 处：f'(1)=3；切线方程 y−1=3(x−1)</text>
+</svg>

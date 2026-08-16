@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410" role="img" aria-labelledby="title desc">
+  <title id="title">用长方形面积变化理解乘积法则</title>
+  <desc id="desc">原面积为 u 乘 v。两条边分别增加 delta u 和 delta v 后，新增面积由 v delta u、u delta v 和小角块 delta u delta v 组成。</desc>
+  <defs>
+    <style>
+      .base{fill:#e2e8f0}.a{fill:#93c5fd}.b{fill:#fdba74}.corner{fill:#86efac}.line{fill:none;stroke:#475569;stroke-width:2}.label{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a;font-size:21px}.small{font-size:17px;fill:#475569}.formula{font-family:Georgia,serif;font-size:25px;font-weight:700}
+      @media(prefers-color-scheme:dark){.base{fill:#334155}.a{fill:#1d4ed8}.b{fill:#c2410c}.corner{fill:#15803d}.line{stroke:#cbd5e1}.label{fill:#f8fafc}.small{fill:#cbd5e1}}
+    </style>
+  </defs>
+  <text x="450" y="34" text-anchor="middle" class="label formula">Δ(uv) = vΔu + uΔv + ΔuΔv</text>
+  <g transform="translate(150 70)">
+    <rect class="b" x="0" y="0" width="430" height="62"/>
+    <rect class="corner" x="430" y="0" width="115" height="62"/>
+    <rect class="base" x="0" y="62" width="430" height="220"/>
+    <rect class="a" x="430" y="62" width="115" height="220"/>
+    <rect class="line" x="0" y="0" width="545" height="282"/>
+    <line class="line" x1="430" y1="0" x2="430" y2="282"/>
+    <line class="line" x1="0" y1="62" x2="545" y2="62"/>
+    <text x="215" y="180" text-anchor="middle" class="label">原面积 uv</text>
+    <text x="487" y="180" text-anchor="middle" class="label">vΔu</text>
+    <text x="215" y="39" text-anchor="middle" class="label">uΔv</text>
+    <text x="487" y="39" text-anchor="middle" class="small">ΔuΔv</text>
+    <text x="215" y="316" text-anchor="middle" class="label">u</text>
+    <text x="487" y="316" text-anchor="middle" class="label">Δu</text>
+    <text x="-28" y="180" text-anchor="middle" class="label">v</text>
+    <text x="-28" y="39" text-anchor="middle" class="label">Δv</text>
+  </g>
+</svg>

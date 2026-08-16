@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" role="img" aria-labelledby="title desc">
+  <title id="title">第一个重要极限的单位圆证明</title>
+  <desc id="desc">内接三角形 OAB 的面积小于扇形 OAB，扇形面积小于外接三角形 OAT，由此得到 sin x 小于 x，小于 tan x。</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #202124; font-size: 15px; }
+    .circle, .radius, .angle { fill: none; stroke: #8a9099; stroke-width: 1.5; }
+    .inner { fill: #3275d8; fill-opacity: .18; stroke: #3275d8; stroke-width: 2.2; }
+    .sector { fill: #d97721; fill-opacity: .14; stroke: #d97721; stroke-width: 2.2; }
+    .outer { fill: #2b8b57; fill-opacity: .10; stroke: #2b8b57; stroke-width: 2.2; }
+    .point { fill: #202124; }
+    .label { font-weight: 600; }
+  </style>
+  <path class="circle" d="M320 350 A140 140 0 0 0 180 210"/>
+  <path class="outer" d="M180 350 L320 350 L320 254.2 Z"/>
+  <path class="sector" d="M180 350 L320 350 A140 140 0 0 0 295.5 270.9 Z"/>
+  <path class="inner" d="M180 350 L320 350 L295.5 270.9 Z"/>
+  <line class="radius" x1="180" y1="350" x2="295.5" y2="270.9"/>
+  <path class="angle" d="M222 350 A42 42 0 0 0 214.7 326.3"/>
+  <circle class="point" cx="180" cy="350" r="4"/>
+  <circle class="point" cx="320" cy="350" r="4"/>
+  <circle class="point" cx="295.5" cy="270.9" r="4"/>
+  <circle class="point" cx="320" cy="254.2" r="4"/>
+  <text x="162" y="372">O</text>
+  <text x="329" y="372">A</text>
+  <text x="278" y="260">B</text>
+  <text x="329" y="250">T</text>
+  <text x="228" y="334">x=0.60 rad</text>
+  <text x="278" y="315">弧长=x</text>
+  <text x="250" y="392" text-anchor="middle">半径=1</text>
+  <text class="label" x="408" y="115">△OAB：面积 = ½sin x</text>
+  <text class="label" x="408" y="155">扇形 OAB：面积 = ½x</text>
+  <text class="label" x="408" y="195">△OAT：面积 = ½tan x</text>
+  <text class="label" x="408" y="260">sin x &lt; x &lt; tan x</text>
+  <text x="408" y="300">cos x &lt; sin x / x &lt; 1</text>
+</svg>

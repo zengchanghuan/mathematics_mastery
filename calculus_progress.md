@@ -2,8 +2,8 @@
 title: Calculus Progress - 微积分学习进度
 document_type: execution-progress
 status: active
-updated: "2026-08-14"
-current_phase: "Week 2 - 极限与连续"
+updated: "2026-08-16"
+current_phase: "Week 3 - 导数核心；短暂回补第一章目录缺口"
 ---
 
 # Calculus Progress — 微积分学习进度
@@ -14,28 +14,33 @@ current_phase: "Week 2 - 极限与连续"
 
 - [learning_plan.md](learning_plan.md)：长期路线、阶段边界和验收标准。
 - [calculus_tutor.md](calculus_tutor.md)：AI Tutor 的教学与出题规则。
-- [calculus/01_limits/README.md](calculus/01_limits/README.md)：当前章节的例题、错因和学习证据。
+- [calculus/01_limits/README.md](calculus/01_limits/README.md)：极限、连续、错因和待回补内容。
+- [calculus/02_derivatives/README.md](calculus/02_derivatives/README.md)：当前导数章节的定义、推导、例题和学习证据。
 - 本文件：当前焦点、掌握判断、薄弱点和下一轮训练队列。
 
 ## Current Focus
 
-**极限与连续主线：渐近线间隔复测 + Week 2 未覆盖内容。**
+**导数主线：完成教材目录缺口的最小回补后，从商法则继续。**
 
-当前先巩固空点、竖直/水平/斜渐近线和多项式除法中的负号稳定性，再补齐连续与介值定理、夹逼定理、基本三角极限及 ε-δ 直觉。
+Week 2 章节检查为 \(3.5/4=87.5\%\)，已经达到进入导数的门槛。当前已学习导数定义、切线、幂函数、线性运算和乘积法则。学习者确认幂函数、线性运算和乘积法则较熟悉；按照掌握优先原则跳过当堂重复练习，但保留跨日抽查。
+
+对照学习者提供的教材目录，先补数列极限、无穷小比较和闭区间连续函数性质。当前第一项是有界性与最大值最小值定理，随后正式整理零点定理，再返回商法则。
 
 计算型定积分专项仍保留为长期重点，但它属于 Week 4 的积分核心和 Phase 5 的一元微积分补全，不作为现在的起点。进入前必须先通过极限、导数、基本积分与微积分基本定理的前置门。
 
 ```mermaid
 flowchart LR
-    A[当前 Week 2 极限与连续] --> B[Week 3 导数]
-    B --> C[Week 4 积分与基本定理]
-    C --> D[第一阶段复盘]
-    D --> E[Phase 5 计算型积分专项]
+    A[闭区间连续函数性质补全] --> B[商与链式法则]
+    B --> C[特殊函数求导与微分]
+    C --> D[微分中值定理与导数应用]
+    D --> E[基础不定积分]
+    E --> F[定积分与基本定理]
+    F --> G[Phase 5 计算型积分专项]
 ```
 
 ## Current Stage
 
-`Limits & Continuity — Developing with Asymptote Retest`
+`Derivative Core — Product Rule Passed; Chapter 1 Gap Repair In Progress`
 
 训练流程：**主动回忆 → 识别对象 → 说明依据 → 完成计算 → 检查符号与条件 → 独立变式 → 间隔复测**。
 
@@ -54,11 +59,22 @@ flowchart LR
 | 水平渐近线与无穷远极限 | 🟡 Developing | High |
 | 斜渐近线与多项式除法 | 🟡 Developing | Very High |
 | 连续与间断分类 | 🟡 Developing | High |
-| 介值定理 | ⬜ Not Assessed | Next |
-| 夹逼定理与基本三角极限 | ⬜ Not Assessed | Next |
-| ε-δ 定义直觉 | ⬜ Not Assessed | Later |
-| 导数基本公式 | ⬜ Not Assessed | Week 3 |
+| 介值定理 | 🟡 Developing | Review |
+| 零点定理正式条件 | ⬜ Not Assessed | Immediate |
+| 闭区间连续函数性质 | ⬜ Not Assessed | Immediate |
+| 数列极限与收敛性质 | ⬜ Not Assessed | Gap Repair |
+| 无穷小比较与等价无穷小 | ⬜ Not Assessed | Gap Repair |
+| 夹逼定理与两个重要极限 | 🟡 Developing | Review |
+| ε-δ 定义直觉 | 🟡 Developing | Review |
+| 导数定义与切线 | 🟡 Developing | High |
+| 幂函数求导 | 🟡 Developing（自述熟悉） | Retest |
+| 线性运算求导 | 🟡 Developing（自述熟悉） | Retest |
+| 乘积法则 | 🟡 Developing（自述熟悉） | Retest |
+| 商法则、反函数求导 | ⬜ Not Assessed | Next |
 | Chain Rule | ⬜ Not Assessed | Week 3 |
+| 三角、指数、对数函数导数 | ⬜ Not Assessed | Week 3 |
+| 微分中值定理链条 | ⬜ Not Assessed | Week 3 |
+| 洛必达法则与有限阶 Taylor 公式 | ⬜ Not Assessed | Week 3 |
 | 基本不定积分公式 | ⬜ Not Assessed | Week 4 |
 | 换元积分 | ⬜ Not Assessed | Week 4 / Phase 5 |
 | 分部积分 | ⬜ Not Assessed | Phase 5 |
@@ -78,22 +94,21 @@ flowchart LR
 
 ## Current Weaknesses with Evidence
 
-1. 多项式除法中，减去整行时容易漏掉变号。
-2. 负系数相除或抄写完整“小尾巴”时可能丢失负号。
-3. 渐近线方法已能完成，但还缺跨日、无提示复测证明长期稳定。
-4. 连续条件中，仍需稳定区分“左右极限不等”和“极限值不等于函数值”。
-5. 指数/对数互逆、特殊角、定义域和值域等预备知识尚未完成滚动复测。
+1. 导数函数和指定点的斜率曾发生混淆；需要继续执行“先求公式，再代入横坐标”。
+2. 点斜式切线方程已经完成基础订正，但还缺跨日无提示复测。
+3. \(\varepsilon\) 与 \(\delta\) 的角色曾受题目顺序影响，需要间隔复测输入距离与输出误差。
+4. 介值定理的根区间曾把开区间写成闭区间，需要强化定理结论中的端点精度。
+5. 渐近线、多项式除法和负号运算已能完成当前题目，但长期稳定性仍待 2026-08-19 复测。
 
 ## Next Training Queue
 
-- [ ] 负系数多项式除法：1 道无提示题，并做乘回验算。
-- [ ] 渐近线混合分类：1 道含空点与至少两类渐近线的题。
-- [ ] 连续与间断迁移：2—3 道，要求逐项检查三个条件。
-- [ ] 因式分解或共轭有理化极限：2 道无提示复习题。
-- [ ] 三角最小前置复测：特殊角、弧度制、单位圆、基本恒等式。
-- [ ] 基本三角极限与夹逼定理：先讲直觉和完整例题，再做变式。
-- [ ] ε-δ：先说明它解决什么问题，再决定是否进入基础证明。
-- [ ] Week 2 章节检查：基础题达到 80%，并能口头解释极限与连续的区别。
+- [ ] 严格定义和直观讲解有界性、最大值最小值定理。
+- [ ] 由介值定理推出零点定理，完成一道条件辨认题和一道存在性题。
+- [ ] 短单元补数列极限、无穷小比较和连续函数运算。
+- [ ] 返回导数主线：商法则 → 反函数求导 → 链式法则。
+- [ ] 完成三角、指数、对数函数求导与基础隐函数求导。
+- [ ] 按费马 → 罗尔 → 拉格朗日 → 柯西的顺序学习微分中值定理。
+- [ ] 2026-08-19：间隔复测渐近线、负号、\(\varepsilon\)/\(\delta\)、切线斜率和自述熟悉的三类求导法则。
 
 ## Future Integration Target Problem Families
 
