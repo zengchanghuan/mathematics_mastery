@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">余弦差角公式的三角形证明</title>
+  <desc id="desc">单位圆上两点 A 和 B 与圆心 O 构成三角形。半径 OA 和 OB 都等于 1，圆心角为 a 与 b 的差。同一条边 AB 分别用余弦定理和坐标距离公式计算。</desc>
+  <defs>
+    <style>
+      .axis{stroke:#94a3b8;stroke-width:2}
+      .circle{fill:none;stroke:#cbd5e1;stroke-width:2}
+      .triangle{fill:#dbeafe;fill-opacity:.55;stroke:#2563eb;stroke-width:4;stroke-linejoin:round}
+      .radius-a{stroke:#2563eb;stroke-width:5}
+      .radius-b{stroke:#ea580c;stroke-width:5}
+      .chord{stroke:#16a34a;stroke-width:5}
+      .arc{fill:none;stroke:#7c3aed;stroke-width:4}
+      .point{fill:#0f172a}
+      .label{font:22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .small{font:19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .formula{font:600 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .heading{font:700 27px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .box-law{fill:#fff7ed;stroke:#fb923c;stroke-width:2}
+      .box-coordinate{fill:#f0fdf4;stroke:#4ade80;stroke-width:2}
+    </style>
+  </defs>
+
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text x="450" y="42" text-anchor="middle" class="heading">同一条边 AB 的两种算法</text>
+
+  <line x1="70" y1="410" x2="665" y2="410" class="axis"/>
+  <line x1="335" y1="75" x2="335" y2="505" class="axis"/>
+  <circle cx="335" cy="410" r="245" class="circle"/>
+
+  <path d="M 335 410 L 419 180 L 557 306 Z" class="triangle"/>
+  <line x1="335" y1="410" x2="419" y2="180" class="radius-a"/>
+  <line x1="335" y1="410" x2="557" y2="306" class="radius-b"/>
+  <line x1="419" y1="180" x2="557" y2="306" class="chord"/>
+
+  <circle cx="335" cy="410" r="7" class="point"/>
+  <circle cx="419" cy="180" r="7" class="point"/>
+  <circle cx="557" cy="306" r="7" class="point"/>
+
+  <path d="M 397 381 A 68 68 0 0 0 358 346" class="arc"/>
+  <text x="379" y="345" class="label">|a−b|</text>
+
+  <text x="310" y="440" class="label">O</text>
+  <text x="390" y="159" class="label">A = (cos a, sin a)</text>
+  <text x="570" y="305" class="label">B = (cos b, sin b)</text>
+  <text x="357" y="279" class="small">OA = 1</text>
+  <text x="453" y="378" class="small">OB = 1</text>
+  <text x="500" y="228" class="small">同一条边 AB</text>
+
+  <rect x="125" y="520" width="275" height="55" rx="12" class="box-law"/>
+  <text x="262" y="555" text-anchor="middle" class="formula">① 余弦定理算 AB²</text>
+
+  <rect x="500" y="520" width="275" height="55" rx="12" class="box-coordinate"/>
+  <text x="637" y="555" text-anchor="middle" class="formula">② 坐标距离算 AB²</text>
+</svg>
