@@ -17,10 +17,12 @@
 
 ## 从哪里开始
 
-- 开始当天训练：先读 [calculus_progress.md](calculus_progress.md)，确认当前焦点和下一轮队列。
-- 调用 AI Tutor：遵循 [calculus_tutor.md](calculus_tutor.md) 的阶段门、提示节奏和证据标准。
+- 跨设备或新会话继续：先读 [calculus/PROGRESS.md](calculus/PROGRESS.md)，恢复精确停点。
+- 调用 AI Tutor：先遵循 [calculus/AGENTS.md](calculus/AGENTS.md)，长期规则参考 [calculus_tutor.md](calculus_tutor.md)。
+- 查看详细仪表板：读 [calculus_progress.md](calculus_progress.md)，确认掌握证据和下一轮队列。
+- 查看课程与错题：进入 [calculus/lessons/](calculus/lessons/) 和 [calculus/mistakes/](calculus/mistakes/)。
 - 查看长期路线：读 [learning_plan.md](learning_plan.md)，不要把未来阶段主题误当成当前任务。
-- 复习具体错因：进入当前章节笔记；现阶段为 [极限与连续](calculus/01_limits/README.md)。
+- 继续当前课程：进入 [三角恒等式的证明与练习](calculus/lessons/trigonometric-identities.md)；复习真实错因时读取 [活跃复测队列](calculus/mistakes/active-review.md)。
 
 ## 学习目标
 
@@ -70,6 +72,11 @@ mathematics_mastery/
 ├── calculus_tutor.md
 ├── calculus_learning_prerequisites.md
 ├── calculus/
+│   ├── AGENTS.md
+│   ├── PROGRESS.md
+│   ├── lessons/
+│   ├── assets/
+│   ├── mistakes/
 │   ├── 00_preparation/
 │   ├── 01_limits/
 │   ├── 02_derivatives/

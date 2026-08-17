@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">三种数列的收敛与发散比较</title>
+  <desc id="desc">数列一除以 n 从上方收敛到零；负一的 n 次方在正一负一之间来回跳而发散；负一的 n 次方除以 n 虽然正负交替但振幅缩小并收敛到零。</desc>
+  <style>
+    .bg { fill: #fffdf8; }
+    .frame, .axis, .stem { fill: none; stroke: #c9c1b6; stroke-width: 1.5; }
+    .band { fill: #dff5fa; }
+    .limit { stroke: #168aad; stroke-width: 3; }
+    .point { fill: #d96b24; stroke: #fffdf8; stroke-width: 2; }
+    .tail { fill: #168aad; }
+    .main { fill: #241d17; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .muted { fill: #6e6258; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .good { fill: #08799b; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-weight: 700; }
+    .warn { fill: #b64e0b; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-weight: 700; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #171717; }
+      .frame, .axis, .stem { stroke: #554d46; }
+      .band { fill: #17343b; }
+      .limit { stroke: #66d9ef; }
+      .point { fill: #ff9f43; stroke: #171717; }
+      .tail { fill: #66d9ef; }
+      .main { fill: #f7ede2; }
+      .muted { fill: #c4b7aa; }
+      .good { fill: #89e4f4; }
+      .warn { fill: #ffb56b; }
+    }
+  </style>
+
+  <rect class="bg" width="900" height="600" rx="24"/>
+  <text class="main" x="450" y="48" text-anchor="middle" font-size="30" font-weight="700">数列是否收敛：看后面的所有项是否越来越靠拢</text>
+
+  <g transform="translate(0 70)">
+    <text class="main" x="44" y="28" font-size="22" font-weight="700">① aₙ=1/n</text>
+    <rect class="frame" x="180" y="5" width="650" height="130"/>
+    <rect class="band" x="180" y="78" width="650" height="44"/>
+    <line class="limit" x1="180" y1="100" x2="830" y2="100"/>
+    <path class="stem" d="M205 20V100 M260 50V100 M315 65V100 M370 75V100 M425 80V100 M480 84V100 M535 87V100 M590 89V100 M645 90V100 M700 91V100 M755 92V100 M810 93V100"/>
+    <circle class="point" cx="205" cy="20" r="7"/><circle class="point" cx="260" cy="50" r="7"/><circle class="point" cx="315" cy="65" r="7"/><circle class="point" cx="370" cy="75" r="7"/>
+    <circle class="tail" cx="425" cy="80" r="7"/><circle class="tail" cx="480" cy="84" r="7"/><circle class="tail" cx="535" cy="87" r="7"/><circle class="tail" cx="590" cy="89" r="7"/><circle class="tail" cx="645" cy="90" r="7"/><circle class="tail" cx="700" cy="91" r="7"/><circle class="tail" cx="755" cy="92" r="7"/><circle class="tail" cx="810" cy="93" r="7"/>
+    <text class="good" x="44" y="65" font-size="20">收敛到 0</text>
+    <text class="muted" x="44" y="96" font-size="17">从上方靠近</text>
+  </g>
+
+  <g transform="translate(0 245)">
+    <text class="main" x="44" y="28" font-size="22" font-weight="700">② aₙ=(−1)ⁿ</text>
+    <rect class="frame" x="180" y="5" width="650" height="130"/>
+    <rect class="band" x="180" y="55" width="650" height="30"/>
+    <line class="limit" x1="180" y1="70" x2="830" y2="70"/>
+    <path class="stem" d="M205 120V70 M260 20V70 M315 120V70 M370 20V70 M425 120V70 M480 20V70 M535 120V70 M590 20V70 M645 120V70 M700 20V70 M755 120V70 M810 20V70"/>
+    <circle class="point" cx="205" cy="120" r="7"/><circle class="point" cx="260" cy="20" r="7"/><circle class="point" cx="315" cy="120" r="7"/><circle class="point" cx="370" cy="20" r="7"/><circle class="point" cx="425" cy="120" r="7"/><circle class="point" cx="480" cy="20" r="7"/><circle class="point" cx="535" cy="120" r="7"/><circle class="point" cx="590" cy="20" r="7"/><circle class="point" cx="645" cy="120" r="7"/><circle class="point" cx="700" cy="20" r="7"/><circle class="point" cx="755" cy="120" r="7"/><circle class="point" cx="810" cy="20" r="7"/>
+    <text class="warn" x="44" y="65" font-size="20">发散</text>
+    <text class="muted" x="44" y="96" font-size="17">永远跳 ±1</text>
+  </g>
+
+  <g transform="translate(0 420)">
+    <text class="main" x="44" y="28" font-size="22" font-weight="700">③ aₙ=(−1)ⁿ/n</text>
+    <rect class="frame" x="180" y="5" width="650" height="130"/>
+    <rect class="band" x="180" y="48" width="650" height="44"/>
+    <line class="limit" x1="180" y1="70" x2="830" y2="70"/>
+    <path class="stem" d="M205 120V70 M260 45V70 M315 87V70 M370 57V70 M425 80V70 M480 62V70 M535 77V70 M590 64V70 M645 75V70 M700 65V70 M755 74V70 M810 66V70"/>
+    <circle class="point" cx="205" cy="120" r="7"/><circle class="point" cx="260" cy="45" r="7"/><circle class="point" cx="315" cy="87" r="7"/><circle class="point" cx="370" cy="57" r="7"/>
+    <circle class="tail" cx="425" cy="80" r="7"/><circle class="tail" cx="480" cy="62" r="7"/><circle class="tail" cx="535" cy="77" r="7"/><circle class="tail" cx="590" cy="64" r="7"/><circle class="tail" cx="645" cy="75" r="7"/><circle class="tail" cx="700" cy="65" r="7"/><circle class="tail" cx="755" cy="74" r="7"/><circle class="tail" cx="810" cy="66" r="7"/>
+    <text class="good" x="44" y="65" font-size="20">收敛到 0</text>
+    <text class="muted" x="44" y="96" font-size="17">摆动逐渐缩小</text>
+  </g>
+</svg>

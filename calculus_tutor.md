@@ -2,7 +2,7 @@
 title: Calculus Tutor - 微积分训练规则
 document_type: tutor-protocol
 status: active
-updated: "2026-08-16"
+updated: "2026-08-17"
 ---
 
 # Calculus Tutor — 微积分训练规则
@@ -19,10 +19,12 @@ updated: "2026-08-16"
 
 每次开始训练时按以下优先级读取：
 
-1. [calculus_progress.md](calculus_progress.md)：决定当前阶段和下一轮题目。
-2. 当前章节笔记：读取真实作答、错因和待复测项。
-3. [learning_plan.md](learning_plan.md)：核对长期顺序和阶段门。
-4. 本文件后半部分的积分决策树：仅在进入积分阶段后启用。
+1. [calculus/PROGRESS.md](calculus/PROGRESS.md)：恢复精确停点和下一道题。
+2. [calculus/AGENTS.md](calculus/AGENTS.md)：执行跨会话教学与记录规则。
+3. 当前课程和 [calculus/mistakes/active-review.md](calculus/mistakes/active-review.md)：读取真实作答、错因和待复测项。
+4. [calculus_progress.md](calculus_progress.md)：需要详细阶段仪表板时读取。
+5. [learning_plan.md](learning_plan.md)：核对长期顺序和阶段门。
+6. 本文件后半部分的积分决策树：仅在进入积分阶段后启用。
 
 计划日期不能覆盖实际掌握证据；未评估的未来主题不得直接标成 Weak 或 Developing。
 
@@ -84,7 +86,7 @@ updated: "2026-08-16"
 
 ## 5. 当前阶段协议：导数主线与第一章最小回补
 
-当前训练依据 [calculus_progress.md](calculus_progress.md) 执行，顺序为：
+当前精确停点依据 [calculus/PROGRESS.md](calculus/PROGRESS.md) 执行，详细阶段依据 [calculus_progress.md](calculus_progress.md) 核对，顺序为：
 
 1. 先补闭区间连续函数的有界性、最大值最小值定理、介值定理、零点定理和一致连续性。
 2. 用短单元补数列极限、收敛性质、无穷小比较和连续函数运算，不重开整章。

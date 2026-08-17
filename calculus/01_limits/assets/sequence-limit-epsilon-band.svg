@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+  <title id="title">数列极限的艾普西隆带</title>
+  <desc id="desc">数列一除以 n 的离散点逐渐靠近零。当允许误差为零点二时，从第六项开始所有数列值都进入极限零周围的误差带。</desc>
+  <style>
+    .bg { fill: #fffdf8; }
+    .frame, .axis, .stem { fill: none; stroke: #c9c1b6; stroke-width: 1.5; }
+    .band { fill: #dff5fa; }
+    .limit { stroke: #168aad; stroke-width: 4; }
+    .threshold { stroke: #8b5cf6; stroke-width: 3; stroke-dasharray: 9 7; }
+    .before { fill: #d96b24; stroke: #fffdf8; stroke-width: 2; }
+    .after { fill: #168aad; stroke: #fffdf8; stroke-width: 2; }
+    .main { fill: #241d17; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .muted { fill: #6e6258; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .accent { fill: #08799b; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-weight: 700; }
+    .threshold-text { fill: #6d42c7; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; font-weight: 700; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #171717; }
+      .frame, .axis, .stem { stroke: #554d46; }
+      .band { fill: #17343b; }
+      .limit { stroke: #66d9ef; }
+      .threshold { stroke: #b9a0ff; }
+      .before { fill: #ff9f43; stroke: #171717; }
+      .after { fill: #66d9ef; stroke: #171717; }
+      .main { fill: #f7ede2; }
+      .muted { fill: #c4b7aa; }
+      .accent { fill: #89e4f4; }
+      .threshold-text { fill: #cbbcff; }
+    }
+  </style>
+
+  <rect class="bg" width="900" height="500" rx="24"/>
+  <text class="main" x="450" y="52" text-anchor="middle" font-size="30" font-weight="700">aₙ=1/n：从第 N 项开始全部靠近极限 0</text>
+  <rect class="frame" x="92" y="90" width="716" height="330"/>
+  <rect class="band" x="92" y="312" width="716" height="96"/>
+  <line class="axis" x1="92" y1="408" x2="808" y2="408"/>
+  <line class="axis" x1="92" y1="90" x2="92" y2="420"/>
+  <line class="limit" x1="92" y1="360" x2="808" y2="360"/>
+  <line class="threshold" x1="335" y1="90" x2="335" y2="420"/>
+
+  <g>
+    <line class="stem" x1="100" y1="360" x2="100" y2="120"/><circle class="before" cx="100" cy="120" r="8"/>
+    <line class="stem" x1="147" y1="360" x2="147" y2="240"/><circle class="before" cx="147" cy="240" r="8"/>
+    <line class="stem" x1="194" y1="360" x2="194" y2="280"/><circle class="before" cx="194" cy="280" r="8"/>
+    <line class="stem" x1="241" y1="360" x2="241" y2="300"/><circle class="before" cx="241" cy="300" r="8"/>
+    <line class="stem" x1="288" y1="360" x2="288" y2="312"/><circle class="before" cx="288" cy="312" r="8"/>
+    <line class="stem" x1="335" y1="360" x2="335" y2="320"/><circle class="after" cx="335" cy="320" r="8"/>
+    <line class="stem" x1="382" y1="360" x2="382" y2="326"/><circle class="after" cx="382" cy="326" r="7"/>
+    <line class="stem" x1="429" y1="360" x2="429" y2="330"/><circle class="after" cx="429" cy="330" r="7"/>
+    <line class="stem" x1="476" y1="360" x2="476" y2="333"/><circle class="after" cx="476" cy="333" r="7"/>
+    <line class="stem" x1="523" y1="360" x2="523" y2="336"/><circle class="after" cx="523" cy="336" r="7"/>
+    <line class="stem" x1="570" y1="360" x2="570" y2="338"/><circle class="after" cx="570" cy="338" r="7"/>
+    <line class="stem" x1="617" y1="360" x2="617" y2="340"/><circle class="after" cx="617" cy="340" r="7"/>
+    <line class="stem" x1="664" y1="360" x2="664" y2="342"/><circle class="after" cx="664" cy="342" r="7"/>
+    <line class="stem" x1="711" y1="360" x2="711" y2="343"/><circle class="after" cx="711" cy="343" r="7"/>
+    <line class="stem" x1="758" y1="360" x2="758" y2="344"/><circle class="after" cx="758" cy="344" r="7"/>
+  </g>
+
+  <text class="muted" x="100" y="447" text-anchor="middle" font-size="18">n=1</text>
+  <text class="threshold-text" x="335" y="112" text-anchor="middle" font-size="20">N=6</text>
+  <text class="muted" x="758" y="447" text-anchor="middle" font-size="18">n=15</text>
+  <text class="accent" x="798" y="347" text-anchor="end" font-size="20">极限 L=0</text>
+  <text class="accent" x="798" y="304" text-anchor="end" font-size="18">ε=0.2</text>
+  <text class="main" x="450" y="482" text-anchor="middle" font-size="21" font-weight="700">n≥6 后，所有 aₙ 都满足 |aₙ−0|&lt;0.2</text>
+</svg>

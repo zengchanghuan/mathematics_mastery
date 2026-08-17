@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="480" viewBox="0 0 760 480" role="img" aria-labelledby="title desc">
+  <title id="title">余弦差角公式的单位向量证明</title>
+  <desc id="desc">单位圆上方向角为 a 和 b 的两根单位向量，夹角为 a 减 b；它们的点积同时等于坐标乘积之和与夹角余弦。</desc>
+  <defs>
+    <style>
+      .axis{stroke:#64748b;stroke-width:2}.circle{fill:none;stroke:#94a3b8;stroke-width:2}
+      .u{stroke:#2563eb;stroke-width:5}.v{stroke:#ea580c;stroke-width:5}
+      .arc{fill:none;stroke:#16a34a;stroke-width:4}.point-u{fill:#2563eb}.point-v{fill:#ea580c}
+      .label{font:22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+    </style>
+  </defs>
+  <rect width="760" height="480" fill="#fff"/>
+  <text x="380" y="42" text-anchor="middle" class="formula">同一个点积的两种算法</text>
+  <line x1="95" y1="320" x2="665" y2="320" class="axis"/>
+  <line x1="350" y1="70" x2="350" y2="405" class="axis"/>
+  <circle cx="350" cy="320" r="205" class="circle"/>
+  <line x1="350" y1="320" x2="420" y2="127" class="u"/>
+  <line x1="350" y1="320" x2="536" y2="233" class="v"/>
+  <circle cx="420" cy="127" r="8" class="point-u"/>
+  <circle cx="536" cy="233" r="8" class="point-v"/>
+  <path d="M 412 291 A 68 68 0 0 0 373 256" class="arc"/>
+  <text x="330" y="349" class="label">O</text>
+  <text x="430" y="120" class="label">u</text>
+  <text x="548" y="238" class="label">v</text>
+  <text x="398" y="267" class="label">|a−b|</text>
+  <text x="380" y="438" text-anchor="middle" class="formula">u·v = cos a cos b + sin a sin b = cos(a−b)</text>
+</svg>

@@ -2,13 +2,13 @@
 title: Calculus Progress - 微积分学习进度
 document_type: execution-progress
 status: active
-updated: "2026-08-16"
+updated: "2026-08-17"
 current_phase: "Week 3 - 导数核心；短暂回补第一章目录缺口"
 ---
 
 # Calculus Progress — 微积分学习进度
 
-> 当前学习执行状态的唯一入口。训练后更新；不要因为计划日期或单次做对/做错就大幅改变 Mastery。
+> 本文件保存详细阶段仪表板；跨设备恢复的唯一精确停点在 [calculus/PROGRESS.md](calculus/PROGRESS.md)。不要因为计划日期或单次做对/做错就大幅改变 Mastery。
 
 ## 文件分工
 
@@ -16,7 +16,8 @@ current_phase: "Week 3 - 导数核心；短暂回补第一章目录缺口"
 - [calculus_tutor.md](calculus_tutor.md)：AI Tutor 的教学与出题规则。
 - [calculus/01_limits/README.md](calculus/01_limits/README.md)：极限、连续、错因和待回补内容。
 - [calculus/02_derivatives/README.md](calculus/02_derivatives/README.md)：当前导数章节的定义、推导、例题和学习证据。
-- 本文件：当前焦点、掌握判断、薄弱点和下一轮训练队列。
+- [calculus/PROGRESS.md](calculus/PROGRESS.md)：当前精确停点和下一道题。
+- 本文件：详细阶段、掌握判断、薄弱点和长期训练队列。
 
 ## Current Focus
 
@@ -24,7 +25,7 @@ current_phase: "Week 3 - 导数核心；短暂回补第一章目录缺口"
 
 Week 2 章节检查为 \(3.5/4=87.5\%\)，已经达到进入导数的门槛。当前已学习导数定义、切线、幂函数、线性运算和乘积法则。学习者确认幂函数、线性运算和乘积法则较熟悉；按照掌握优先原则跳过当堂重复练习，但保留跨日抽查。
 
-对照学习者提供的教材目录，先补数列极限、无穷小比较和闭区间连续函数性质。当前第一项是有界性与最大值最小值定理，随后正式整理零点定理，再返回商法则。
+对照学习者提供的教材目录，先补数列极限、无穷小比较和闭区间连续函数性质。学习到 \(1-\cos x\sim x^2/2\) 时发现三角恒等式的证明链条尚未建立，因此在当前位置插入[三角学桥接复习](calculus/00_preparation/trigonometry_bridge_review.md)。弧度、单位圆和基础特殊角不重复，直接补和差角、倍角、半角、降幂与积化和差的证明和应用；完成后返回无穷小比较，再回到商法则。
 
 计算型定积分专项仍保留为长期重点，但它属于 Week 4 的积分核心和 Phase 5 的一元微积分补全，不作为现在的起点。进入前必须先通过极限、导数、基本积分与微积分基本定理的前置门。
 
@@ -51,6 +52,7 @@ flowchart LR
 | 代数变形 | 🟡 Developing | Very High |
 | 函数基础 | 🟡 Developing | Medium |
 | 三角函数基本关系 | 🟡 Developing | High |
+| 三角恒等式的证明与应用 | 🟡 Developing | Immediate Bridge |
 | 指数与对数互逆 | 🟡 Developing | High |
 | 函数值、极限值与左右极限 | 🟡 Developing | High |
 | 直接代入与基本极限运算 | 🟡 Developing | Medium |
@@ -63,8 +65,8 @@ flowchart LR
 | 零点定理正式条件 | 🟡 Developing | Retest |
 | 闭区间连续函数性质 | 🟡 Developing | Retest |
 | 一致连续性 | 🟡 Developing | Retest |
-| 数列极限与收敛性质 | ⬜ Not Assessed | Gap Repair |
-| 无穷小比较与等价无穷小 | ⬜ Not Assessed | Gap Repair |
+| 数列极限与收敛性质 | 🟡 Developing | Gap Repair |
+| 无穷小比较与等价无穷小 | 🟡 Developing | Gap Repair |
 | 夹逼定理与两个重要极限 | 🟡 Developing | Review |
 | ε-δ 定义直觉 | 🟡 Developing | Review |
 | 导数定义与切线 | 🟡 Developing | High |
@@ -109,6 +111,7 @@ flowchart LR
 - [x] 从严格定义、几何直观和线性函数证明学习一致连续性。
 - [ ] 2026-08-19：无提示复测线性函数一致连续证明和负斜率的绝对值。
 - [ ] 短单元补数列极限、无穷小比较和连续函数运算。
+- [ ] 按定义、几何、证明、例题、练习完成三角学桥接复习。
 - [ ] 返回导数主线：商法则 → 反函数求导 → 链式法则。
 - [ ] 完成三角、指数、对数函数求导与基础隐函数求导。
 - [ ] 按费马 → 罗尔 → 拉格朗日 → 柯西的顺序学习微分中值定理。
