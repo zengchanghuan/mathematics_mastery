@@ -8,6 +8,9 @@
 - [trigonometry-cosine-difference-triangle.svg](trigonometry-cosine-difference-triangle.svg)：余弦差角公式的单位圆三角形与余弦定理图。
 - [trigonometry-cosine-difference-projection.svg](trigonometry-cosine-difference-projection.svg)：余弦差角公式的直角三角形投影证明图。
 - [trigonometry-cosine-sum-reflection.svg](trigonometry-cosine-sum-reflection.svg)：把 \(b\) 反射成 \(-b\) 后推导余弦和角公式。
+- [trigonometry-sine-sum-complement.svg](trigonometry-sine-sum-complement.svg)：用直角三角形中的余函数关系推导正弦和角公式。
+- [trigonometry-double-angle.svg](trigonometry-double-angle.svg)：在单位圆中展示 \(a+a=2a\)，并由和角公式推出正弦、余弦倍角公式。
+- [trigonometry-one-minus-cos-half-angle.svg](trigonometry-one-minus-cos-half-angle.svg)：用单位圆弦长和半角直角三角形解释 \(1-\cos x=2\sin^2(x/2)\)。
 
 ## 资源约定
 

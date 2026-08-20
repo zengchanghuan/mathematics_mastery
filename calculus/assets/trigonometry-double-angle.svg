@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="590" viewBox="0 0 980 590" role="img" aria-labelledby="title desc">
+  <title id="title">正弦与余弦倍角公式</title>
+  <desc id="desc">左侧单位圆显示角 a 再增加一个 a 得到 2a，右侧由和角公式逐步推出正弦和余弦倍角公式。</desc>
+  <defs>
+    <style>
+      .axis{fill:none;stroke:#94a3b8;stroke-width:2}.circle{fill:none;stroke:#cbd5e1;stroke-width:3}
+      .ray-a{fill:none;stroke:#2563eb;stroke-width:5}.ray-2a{fill:none;stroke:#ea580c;stroke-width:5}
+      .arc-a{fill:none;stroke:#2563eb;stroke-width:4}.arc-2a{fill:none;stroke:#ea580c;stroke-width:4}
+      .point{fill:#0f172a}.label{font:22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .small{font:19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .heading{font:700 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .box{fill:#f8fafc;stroke:#cbd5e1;stroke-width:2}.result{fill:#eff6ff;stroke:#93c5fd;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="980" height="590" fill="#ffffff"/>
+  <text x="490" y="42" text-anchor="middle" class="heading">倍角不是新角：2a 就是 a+a</text>
+  <rect x="35" y="75" width="405" height="460" rx="18" class="box"/>
+  <text x="237" y="117" text-anchor="middle" class="heading">在单位圆上再转一个 a</text>
+  <circle cx="230" cy="315" r="145" class="circle"/>
+  <line x1="60" y1="315" x2="410" y2="315" class="axis"/>
+  <line x1="230" y1="485" x2="230" y2="145" class="axis"/>
+  <line x1="230" y1="315" x2="356" y2="242" class="ray-a"/>
+  <line x1="230" y1="315" x2="303" y2="189" class="ray-2a"/>
+  <path d="M 275 315 A 45 45 0 0 0 269 293" class="arc-a"/>
+  <path d="M 293 315 A 63 63 0 0 0 262 260" class="arc-2a"/>
+  <circle cx="230" cy="315" r="6" class="point"/><circle cx="356" cy="242" r="6" class="point"/><circle cx="303" cy="189" r="6" class="point"/>
+  <text x="207" y="344" class="label">O</text><text x="346" y="232" class="label">a</text><text x="309" y="179" class="label">2a</text>
+  <text x="279" y="300" class="small">a</text><text x="275" y="258" class="small">a+a</text>
+  <text x="237" y="510" text-anchor="middle" class="formula">最终点坐标：(cos 2a, sin 2a)</text>
+  <rect x="475" y="75" width="470" height="460" rx="18" class="box"/>
+  <text x="710" y="117" text-anchor="middle" class="heading">把和角公式中的 b 换成 a</text>
+  <text x="510" y="170" class="formula">sin 2a = sin(a+a)</text>
+  <text x="535" y="208" class="label">= sin a cos a + cos a sin a</text>
+  <rect x="510" y="228" width="400" height="42" rx="12" class="result"/>
+  <text x="710" y="256" text-anchor="middle" class="formula">sin 2a = 2 sin a cos a</text>
+  <text x="510" y="323" class="formula">cos 2a = cos(a+a)</text>
+  <text x="535" y="361" class="label">= cos²a − sin²a</text>
+  <rect x="510" y="382" width="400" height="42" rx="12" class="result"/>
+  <text x="710" y="410" text-anchor="middle" class="formula">cos 2a = cos²a − sin²a</text>
+  <text x="510" y="463" class="small">再用 sin²a+cos²a=1 改写：</text>
+  <text x="535" y="497" class="formula">cos 2a = 2cos²a−1 = 1−2sin²a</text>
+</svg>
