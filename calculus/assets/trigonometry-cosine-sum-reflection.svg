@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">余弦和角公式的反射推导</title>
+  <desc id="desc">角 b 关于横轴反射为负 b。反射前后横坐标不变，纵坐标变号；角 a 与负 b 之间的夹角为 a 加 b。</desc>
+  <defs>
+    <style>
+      .axis{fill:none;stroke:#94a3b8;stroke-width:2}
+      .reflect{fill:none;stroke:#94a3b8;stroke-width:2;stroke-dasharray:7 6}
+      .ray-a{fill:none;stroke:#2563eb;stroke-width:5}
+      .ray-b{fill:none;stroke:#ea580c;stroke-width:5}
+      .ray-old{fill:none;stroke:#ea580c;stroke-width:3;stroke-dasharray:8 7;opacity:.6}
+      .arc{fill:none;stroke:#16a34a;stroke-width:4}
+      .point{fill:#0f172a}
+      .label{font:22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .small{font:19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .heading{font:700 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .box{fill:#f8fafc;stroke:#cbd5e1;stroke-width:2}
+    </style>
+  </defs>
+
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="42" text-anchor="middle" class="heading">把 b 反射成 −b</text>
+
+  <line x1="45" y1="280" x2="485" y2="280" class="axis"/>
+  <line x1="215" y1="280" x2="342" y2="153" class="ray-a"/>
+  <line x1="215" y1="280" x2="371" y2="190" class="ray-old"/>
+  <line x1="215" y1="280" x2="371" y2="370" class="ray-b"/>
+  <line x1="371" y1="190" x2="371" y2="370" class="reflect"/>
+
+  <path d="M 293 325 A 90 90 0 0 0 279 216" class="arc"/>
+  <text x="303" y="270" class="label">a+b</text>
+
+  <circle cx="215" cy="280" r="6" class="point"/>
+  <circle cx="342" cy="153" r="6" class="point"/>
+  <circle cx="371" cy="190" r="6" class="point"/>
+  <circle cx="371" cy="370" r="6" class="point"/>
+
+  <text x="190" y="311" class="label">O</text>
+  <text x="350" y="146" class="label">a</text>
+  <text x="382" y="187" class="small">+b</text>
+  <text x="382" y="381" class="label">−b</text>
+  <text x="382" y="277" class="small">横坐标不变</text>
+  <text x="382" y="304" class="small">纵坐标变号</text>
+
+  <rect x="515" y="92" width="335" height="370" rx="18" class="box"/>
+  <text x="682" y="138" text-anchor="middle" class="heading">从差角公式得到</text>
+  <text x="545" y="195" class="formula">cos(a+b)</text>
+  <text x="545" y="237" class="label">= cos[a−(−b)]</text>
+  <text x="545" y="279" class="label">= cos a cos(−b)</text>
+  <text x="565" y="316" class="label">+ sin a sin(−b)</text>
+  <text x="545" y="368" class="small">cos(−b)=cos b</text>
+  <text x="545" y="400" class="small">sin(−b)=−sin b</text>
+  <text x="545" y="444" class="formula">= cos a cos b − sin a sin b</text>
+</svg>

@@ -5,6 +5,9 @@
 ## 当前资源
 
 - [trigonometry-cosine-difference.svg](trigonometry-cosine-difference.svg)：余弦差角公式的单位向量图。
+- [trigonometry-cosine-difference-triangle.svg](trigonometry-cosine-difference-triangle.svg)：余弦差角公式的单位圆三角形与余弦定理图。
+- [trigonometry-cosine-difference-projection.svg](trigonometry-cosine-difference-projection.svg)：余弦差角公式的直角三角形投影证明图。
+- [trigonometry-cosine-sum-reflection.svg](trigonometry-cosine-sum-reflection.svg)：把 \(b\) 反射成 \(-b\) 后推导余弦和角公式。
 
 ## 资源约定
 
