@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560" role="img" aria-labelledby="title desc">
+  <title id="title">正弦与余弦乘积化和差的推导关系图</title>
+  <desc id="desc">把正弦和角公式与正弦差角公式相加，余弦正弦乘积项互相抵消，留下两倍正弦余弦乘积，从而得到正弦乘余弦的积化和差公式。</desc>
+  <defs>
+    <style>
+      .title{font:700 29px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .label{font:21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .box-a{fill:#eff6ff;stroke:#3b82f6;stroke-width:3}
+      .box-b{fill:#fff7ed;stroke:#f97316;stroke-width:3}
+      .box-cancel{fill:#f5f3ff;stroke:#8b5cf6;stroke-width:3}
+      .box-result{fill:#f0fdf4;stroke:#22c55e;stroke-width:3}
+      .arrow{fill:none;stroke:#64748b;stroke-width:4;marker-end:url(#arrowhead)}
+      .cancel{fill:#dc2626;font:700 22px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="980" height="560" fill="#ffffff"/>
+  <text x="490" y="48" text-anchor="middle" class="title">积化和差：相加后，cos a sin b 被消掉</text>
+  <text x="490" y="82" text-anchor="middle" class="label">记 P = sin a cos b，Q = cos a sin b</text>
+
+  <rect x="70" y="115" width="385" height="90" rx="16" class="box-a"/>
+  <text x="262" y="170" text-anchor="middle" class="formula">sin(a+b) = P + Q</text>
+
+  <rect x="525" y="115" width="385" height="90" rx="16" class="box-b"/>
+  <text x="717" y="170" text-anchor="middle" class="formula">sin(a−b) = P − Q</text>
+
+  <path d="M262 205 C262 245 390 245 430 280" class="arrow"/>
+  <path d="M717 205 C717 245 590 245 550 280" class="arrow"/>
+
+  <rect x="220" y="280" width="540" height="80" rx="16" class="box-cancel"/>
+  <text x="490" y="313" text-anchor="middle" class="label">两式相加</text>
+  <text x="490" y="344" text-anchor="middle" class="cancel">(+Q) + (−Q) = 0，只剩 P + P = 2P</text>
+
+  <path d="M490 360 L490 400" class="arrow"/>
+
+  <rect x="110" y="405" width="760" height="115" rx="18" class="box-result"/>
+  <text x="490" y="446" text-anchor="middle" class="formula">sin(a+b) + sin(a−b) = 2 sin a cos b</text>
+  <text x="490" y="492" text-anchor="middle" class="formula">sin a cos b = [sin(a+b) + sin(a−b)] / 2</text>
+</svg>

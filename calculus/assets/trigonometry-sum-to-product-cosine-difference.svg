@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+  <title id="title">余弦差化积公式中的负号来源</title>
+  <desc id="desc">令平均角为u、半差角为v，则x等于u加v，y等于u减v。积化和差公式给出二倍正弦乘积等于余弦y减余弦x，而目标是余弦x减余弦y，顺序相反，因此整体带负号。</desc>
+  <defs>
+    <style>
+      .title{font:700 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .label{font:21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .small{font:19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#475569}
+      .axis{stroke:#64748b;stroke-width:4}
+      .tick{stroke:#0f172a;stroke-width:4}
+      .mid{stroke:#2563eb;stroke-width:6}
+      .box-angle{fill:#eff6ff;stroke:#2563eb;stroke-width:3}
+      .box-known{fill:#f0fdf4;stroke:#22c55e;stroke-width:3}
+      .box-target{fill:#fff7ed;stroke:#f97316;stroke-width:3}
+      .box-result{fill:#fef2f2;stroke:#ef4444;stroke-width:3}
+      .arrow{stroke:#8b5cf6;stroke-width:4;fill:none;marker-end:url(#arrowhead)}
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8b5cf6"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="650" fill="#ffffff"/>
+  <text x="500" y="46" text-anchor="middle" class="title">余弦差化积：负号来自两项顺序相反</text>
+
+  <line x1="190" y1="135" x2="810" y2="135" class="axis"/>
+  <line x1="290" y1="115" x2="290" y2="155" class="tick"/>
+  <line x1="500" y1="105" x2="500" y2="165" class="mid"/>
+  <line x1="710" y1="115" x2="710" y2="155" class="tick"/>
+  <text x="290" y="95" text-anchor="middle" class="formula">y = u−v</text>
+  <text x="500" y="90" text-anchor="middle" class="formula" fill="#2563eb">u</text>
+  <text x="710" y="95" text-anchor="middle" class="formula">x = u+v</text>
+  <text x="395" y="190" text-anchor="middle" class="label">距离 v</text>
+  <text x="605" y="190" text-anchor="middle" class="label">距离 v</text>
+
+  <rect x="100" y="220" width="800" height="82" rx="16" class="box-angle"/>
+  <text x="500" y="253" text-anchor="middle" class="formula">u = (x+y)/2，v = (x−y)/2</text>
+  <text x="500" y="282" text-anchor="middle" class="small">所以 x=u+v，y=u−v</text>
+
+  <rect x="65" y="340" width="410" height="105" rx="16" class="box-known"/>
+  <text x="270" y="374" text-anchor="middle" class="label">已知的积化和差公式</text>
+  <text x="270" y="410" text-anchor="middle" class="formula">2 sin u sin v = cos y − cos x</text>
+
+  <rect x="525" y="340" width="410" height="105" rx="16" class="box-target"/>
+  <text x="730" y="374" text-anchor="middle" class="label">现在要求的顺序</text>
+  <text x="730" y="410" text-anchor="middle" class="formula">cos x − cos y</text>
+
+  <path d="M475 392 C500 392 500 392 525 392" class="arrow"/>
+  <text x="500" y="330" text-anchor="middle" class="small" fill="#7c3aed">两项交换顺序 → 整体变号</text>
+
+  <rect x="100" y="495" width="800" height="115" rx="16" class="box-result"/>
+  <text x="500" y="535" text-anchor="middle" class="formula">cos x − cos y = −2 sin u sin v</text>
+  <text x="500" y="577" text-anchor="middle" class="formula">= −2 sin[(x+y)/2] sin[(x−y)/2]</text>
+</svg>

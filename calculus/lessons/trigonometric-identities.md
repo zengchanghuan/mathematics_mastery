@@ -810,3 +810,733 @@ flowchart TD
 
 带提示练习完成。当前独立变式：令 \(x=420^\circ\)，使用半角公式求
 \(\cos(x/2)=\cos210^\circ\)，不提供分步提示。
+
+学习者首次文本回答为 \(\sqrt3/2\)，绝对值正确但漏掉第三象限的负号；经象限提示
+后订正。随后提交完整手写过程，其推导链为：
+
+\[
+\cos2\alpha=2\cos^2\alpha-1
+\quad\Longrightarrow\quad
+\cos^2\alpha=\frac{1+\cos2\alpha}{2},
+\]
+
+\[
+\cos420^\circ=\cos60^\circ=\frac12,
+\qquad
+\cos^2210^\circ=\frac{1+1/2}{2}=\frac34.
+\]
+
+因为 \(210^\circ\) 在第三象限，最终选择负根：
+
+\[
+\boxed{\cos210^\circ=-\frac{\sqrt3}{2}}.
+\]
+
+手写证据表明学习者能够独立寻找 \(\cos420^\circ\) 的值，没有再次循环代入等价公式。
+因最终符号曾需一次提示，本项保持 `Developing`，安排间隔复测。
+
+### 12.7 下一步：降幂公式的实际使用
+
+降幂公式把平方降成一次余弦，同时把角变成两倍：
+
+```mermaid
+flowchart LR
+    A["cos 2x = 1 − 2sin²x"] --> B["sin²x = (1 − cos 2x) / 2"]
+    C["cos 2x = 2cos²x − 1"] --> D["cos²x = (1 + cos 2x) / 2"]
+```
+
+完整例题：
+
+\[
+\sin^215^\circ
+=\frac{1-\cos30^\circ}{2}
+=\boxed{\frac{2-\sqrt3}{4}}.
+\]
+
+带提示练习 \(\cos^230^\circ\) 中，学习者首次只给出最终值 \(3/4\)；经要求补写
+公式证据后，正确指出分子为 \(1+\cos60^\circ\)：
+
+\[
+\cos^230^\circ
+=\frac{1+\cos60^\circ}{2}
+=\boxed{\frac34}.
+\]
+
+无提示独立变式：使用降幂公式计算 \(\sin^275^\circ\)。学习者直接正确回答：
+
+\[
+\boxed{\sin^275^\circ=\frac{2+\sqrt3}{4}}.
+\]
+
+这表明学习者能使用正弦降幂公式，并正确处理
+\(\cos150^\circ=-\sqrt3/2\)。降幂公式当堂练习完成，保持 `Developing`，等待
+间隔复测。
+
+## 13. 下一步：积化和差与和差化积
+
+### 13.1 第一条：余弦乘积化和差
+
+“积化和差”是把两个三角函数的乘积，改写为两个三角函数的和或差。第一条公式对任意
+实数角 \(a,b\) 都成立：
+
+\[
+\boxed{\cos a\cos b
+=\frac{\cos(a-b)+\cos(a+b)}{2}}.
+\]
+
+它不需要单独死记，来源是已经学过的两条余弦公式。下面的图把重复结构暂记为
+\(C=\cos a\cos b\)、\(S=\sin a\sin b\)：
+
+![余弦乘积化和差的推导关系图](../assets/trigonometry-product-to-sum-cosine.svg)
+
+从：
+
+\[
+\cos(a-b)=\cos a\cos b+\sin a\sin b,
+\]
+
+\[
+\cos(a+b)=\cos a\cos b-\sin a\sin b
+\]
+
+开始。两式相加时，\(+\sin a\sin b\) 与 \(-\sin a\sin b\) 抵消：
+
+\[
+\cos(a-b)+\cos(a+b)=2\cos a\cos b.
+\]
+
+两边除以 \(2\)，便得到目标公式。
+
+### 13.2 完整例题
+
+计算 \(\cos75^\circ\cos15^\circ\)：
+
+\[
+\begin{aligned}
+\cos75^\circ\cos15^\circ
+&=\frac{\cos(75^\circ-15^\circ)+\cos(75^\circ+15^\circ)}{2}\\
+&=\frac{\cos60^\circ+\cos90^\circ}{2}\\
+&=\frac{1/2+0}{2}\\
+&=\boxed{\frac14}.
+\end{aligned}
+\]
+
+### 13.3 当前带提示练习
+
+使用同一条积化和差公式计算：
+
+\[
+\boxed{\cos60^\circ\cos30^\circ}.
+\]
+
+第一步只把乘积改写成包含 \(60^\circ-30^\circ\) 与
+\(60^\circ+30^\circ\) 的形式，暂不计算特殊角值。
+
+学习者正确写出：
+
+\[
+\cos60^\circ\cos30^\circ
+=\frac{\cos30^\circ+\cos90^\circ}{2}
+=\boxed{\frac{\sqrt3}{4}}.
+\]
+
+当前独立变式为 \(\cos75^\circ\cos45^\circ\)。首次最终结果写成含
+\((1+\sqrt3)/4\) 的形式，错误来自把第二象限的 \(\cos120^\circ\) 当作正数；
+经象限图提示后，学习者正确指出
+\(\cos120^\circ=-\sin30^\circ=-1/2\)，并订正为：
+
+\[
+\cos75^\circ\cos45^\circ
+=\frac{\cos30^\circ+\cos120^\circ}{2}
+=\boxed{\frac{\sqrt3-1}{4}}.
+\]
+
+第一条余弦乘积化和差公式的当堂练习完成；因独立变式的象限符号需要一次提示，保持
+`Developing` 并安排间隔复测。
+
+### 13.4 第二条：正弦乘积化和差
+
+对任意实数角 \(a,b\)：
+
+\[
+\boxed{\sin a\sin b
+=\frac{\cos(a-b)-\cos(a+b)}{2}}.
+\]
+
+这一次不是把两条余弦公式相加，而是用差角公式减去和角公式：
+
+![正弦乘积化和差的推导关系图](../assets/trigonometry-product-to-sum-sine.svg)
+
+\[
+\begin{aligned}
+&\cos(a-b)-\cos(a+b)\\
+&=(\cos a\cos b+\sin a\sin b)
+ -(\cos a\cos b-\sin a\sin b)\\
+&=2\sin a\sin b.
+\end{aligned}
+\]
+
+两边除以 \(2\)，得到目标公式。括号很重要：减去第二个整体时，里面的负号会再次
+改变符号，所以 \(\sin a\sin b\) 最终保留为正的两倍。
+
+### 13.5 完整例题
+
+\[
+\begin{aligned}
+\sin75^\circ\sin15^\circ
+&=\frac{\cos(75^\circ-15^\circ)-\cos(75^\circ+15^\circ)}{2}\\
+&=\frac{\cos60^\circ-\cos90^\circ}{2}\\
+&=\boxed{\frac14}.
+\end{aligned}
+\]
+
+### 13.6 当前带提示练习
+
+使用正弦乘积化和差公式计算：
+
+\[
+\boxed{\sin60^\circ\sin30^\circ}.
+\]
+
+第一步只改写成含差角与和角的式子，暂不计算特殊角值。
+
+学习者正确完成带提示练习：
+
+\[
+\sin60^\circ\sin30^\circ
+=\frac{\cos30^\circ-\cos90^\circ}{2}
+=\boxed{\frac{\sqrt3}{4}}.
+\]
+
+无提示独立变式为 \(\sin75^\circ\sin45^\circ\)。手写过程正确给出：
+
+\[
+\begin{aligned}
+\sin75^\circ\sin45^\circ
+&=\frac{\cos30^\circ-\cos120^\circ}{2}\\
+&=\frac{\sqrt3/2-(-1/2)}{2}\\
+&=\boxed{\frac{\sqrt3+1}{4}}.
+\end{aligned}
+\]
+
+本题无提示正确处理 \(\cos120^\circ=-1/2\) 以及减去负数，说明上一题的象限符号
+问题得到当堂迁移订正。正弦乘积化和差公式的当堂练习完成，保持 `Developing`，等待
+间隔复测。
+
+### 13.7 第三条：正弦乘余弦化和差
+
+对任意实数角 \(a,b\)：
+
+\[
+\boxed{\sin a\cos b
+=\frac{\sin(a+b)+\sin(a-b)}{2}}.
+\]
+
+这次从正弦和角公式与差角公式出发。两式相加时，\(\cos a\sin b\) 项抵消：
+
+![正弦乘余弦化和差的推导关系图](../assets/trigonometry-product-to-sum-sine-cosine.svg)
+
+\[
+\begin{aligned}
+\sin(a+b)&=\sin a\cos b+\cos a\sin b,\\
+\sin(a-b)&=\sin a\cos b-\cos a\sin b.
+\end{aligned}
+\]
+
+两式相加并除以 \(2\)，得到目标公式。
+
+### 13.8 完整例题
+
+\[
+\begin{aligned}
+\sin75^\circ\cos15^\circ
+&=\frac{\sin90^\circ+\sin60^\circ}{2}\\
+&=\boxed{\frac{2+\sqrt3}{4}}.
+\end{aligned}
+\]
+
+### 13.9 当前带提示练习
+
+使用第三条公式计算：
+
+\[
+\boxed{\sin60^\circ\cos30^\circ}.
+\]
+
+第一步只改写成两个正弦的和，暂不计算特殊角值。
+
+学习者正确完成带提示练习：
+
+\[
+\sin60^\circ\cos30^\circ
+=\frac{\sin90^\circ+\sin30^\circ}{2}
+=\boxed{\frac34}.
+\]
+
+第一道独立变式 \(\sin15^\circ\cos45^\circ\) 能无提示正确改写为
+\([\sin60^\circ+\sin(-30^\circ)]/2\)；Tutor 随后提醒正弦的奇函数性质，学习者
+得到 \((\sqrt3-1)/4\)。因为中间出现提示，再追加一道真正无提示的短变式。
+
+第二道独立变式 \(\sin75^\circ\cos45^\circ\) 中，学习者无提示正确写出：
+
+\[
+\sin75^\circ\cos45^\circ
+=\frac{\sin120^\circ+\sin30^\circ}{2}
+=\boxed{\frac{\sqrt3+1}{4}}.
+\]
+
+第三条正弦乘余弦化和差公式的当堂练习完成，保持 `Developing`，等待间隔复测。
+
+### 13.10 第四条：余弦乘正弦化和差
+
+对任意实数角 \(a,b\)：
+
+\[
+\boxed{\cos a\sin b
+=\frac{\sin(a+b)-\sin(a-b)}{2}}.
+\]
+
+它与上一条使用同一对正弦公式，但这次用和角公式减去差角公式，使
+\(\sin a\cos b\) 抵消：
+
+![余弦乘正弦化和差的推导关系图](../assets/trigonometry-product-to-sum-cosine-sine.svg)
+
+\[
+\begin{aligned}
+&\sin(a+b)-\sin(a-b)\\
+&=(\sin a\cos b+\cos a\sin b)
+ -(\sin a\cos b-\cos a\sin b)\\
+&=2\cos a\sin b.
+\end{aligned}
+\]
+
+两边除以 \(2\)，得到目标公式。
+
+### 13.11 完整例题
+
+\[
+\begin{aligned}
+\cos75^\circ\sin15^\circ
+&=\frac{\sin90^\circ-\sin60^\circ}{2}\\
+&=\boxed{\frac{2-\sqrt3}{4}}.
+\end{aligned}
+\]
+
+### 13.12 当前带提示练习
+
+使用第四条公式计算：
+
+\[
+\boxed{\cos60^\circ\sin30^\circ}.
+\]
+
+第一步只改写成两个正弦的差，暂不计算特殊角值。
+
+学习者正确改写为：
+
+\[
+\cos60^\circ\sin30^\circ
+=\frac{\sin90^\circ-\sin30^\circ}{2}.
+\]
+
+首次最终回答为 \(1/2\)：这只是分子 \(1-1/2\) 的值，漏掉了公式最外层的除以
+\(2\)。经最小提示后订正为：
+
+\[
+\cos60^\circ\sin30^\circ=\boxed{\frac14}.
+\]
+
+第一道独立变式 \(\cos75^\circ\sin45^\circ\) 的公式改写正确：
+
+\[
+\cos75^\circ\sin45^\circ
+=\frac{\sin120^\circ-\sin30^\circ}{2}.
+\]
+
+首次最终回答为 \(\sqrt3/4\)，在化简时漏掉了 \(-\sin30^\circ=-1/2\) 这一项；
+经提示后正确订正为：
+
+\[
+\boxed{\cos75^\circ\sin45^\circ=\frac{\sqrt3-1}{4}}.
+\]
+
+公式选择与角度改写均正确，但连续出现最终化简漏项，因此当前追加一道无提示确认题：
+
+\[
+\boxed{\cos15^\circ\sin45^\circ}.
+\]
+
+在该题完整通过前，不进入和差化积。
+
+学习者正确改写确认题：
+
+\[
+\cos15^\circ\sin45^\circ
+=\frac{\sin60^\circ-\sin(-30^\circ)}{2}.
+\]
+
+特殊角和负号处理正确，但首次最终回答为 \((\sqrt3+1)/2\)，再次只写出了大分数的
+分子结果，漏掉最外层除以 \(2\)；经提示后订正为 \((\sqrt3+1)/4\)。由于同一错误
+已经在三道题中出现，暂不进入和差化积，先完成最小化简训练：
+
+\[
+\boxed{\frac{\frac{\sqrt2}{2}-\frac12}{2}}.
+\]
+
+本题只检查双层分数化简，不涉及新的三角公式。
+
+学习者无提示正确化简为 \((\sqrt2-1)/4\)，最小双层分数练习通过。随后完整确认题
+\(\cos30^\circ\sin60^\circ\) 的最终值 \(3/4\) 正确，但学习者未补写积化和差
+改写行，并明确表示已经会了、请求通过并继续下一知识点。按学习者要求结束当堂重复训练；
+由于完整公式证据和重复错误后的无提示闭环仍不足，本项保持 `Developing`，留待跨日抽查，
+不标记为 `Mastered`。
+
+### 13.13 四条积化和差公式的统一证明
+
+学习者在进入和差化积后回问“积化和差公式怎么证明”。四条公式不是独立结论，而是把
+余弦或正弦的和差角公式两两组成一组，再通过相加或相减消元：
+
+![积化和差四公式的统一证明图](../assets/trigonometry-product-to-sum-proof-map.svg)
+
+第一组令 \(C=\cos a\cos b\)、\(S=\sin a\sin b\)：
+
+\[
+\cos(a-b)=C+S,\qquad \cos(a+b)=C-S.
+\]
+
+- 两式相加消去 \(S\)，解出 \(C\)，得到余弦乘余弦公式；
+- 第一式减第二式消去 \(C\)，解出 \(S\)，得到正弦乘正弦公式。
+
+第二组令 \(P=\sin a\cos b\)、\(Q=\cos a\sin b\)：
+
+\[
+\sin(a+b)=P+Q,\qquad \sin(a-b)=P-Q.
+\]
+
+- 两式相加消去 \(Q\)，解出 \(P\)，得到正弦乘余弦公式；
+- 第一式减第二式消去 \(P\)，解出 \(Q\)，得到余弦乘正弦公式。
+
+当前先检查第一组的减法为什么留下 \(2S\)，理解后再返回第 14 节和差化积练习。
+
+检查时，学习者首次把
+\((C+S)-(C-S)\) 回答为 \(2C\)。经提示括号前的减号必须同时改变两项符号后，
+正确展开为 \(C+S-C+S\) 并订正为 \(2S\)。随后对第二组的相加
+\((P+Q)+(P-Q)\) 无提示正确回答 \(2P\)。四公式的“相加或相减消元”核心已经理解，
+保持 `Developing`，以后复测括号前负号；现在返回第 14 节。
+
+## 14. 和差化积
+
+“和差化积”是积化和差的反向使用：把两个三角函数的和或差改写成乘积。它的角度结构
+不是凭空出现的，而是由两个原角的平均值与一半差值组成。
+
+### 14.1 第一条：余弦和化积
+
+对任意实数角 \(x,y\)：
+
+\[
+\boxed{\cos x+\cos y
+=2\cos\frac{x+y}{2}\cos\frac{x-y}{2}}.
+\]
+
+图中令平均角 \(u=(x+y)/2\)，半差 \(v=(x-y)/2\)。于是
+\(x=u+v\)、\(y=u-v\)：
+
+![余弦和化积的角度中点图](../assets/trigonometry-sum-to-product-cosine-sum.svg)
+
+反向使用已经学过的余弦乘积化和差公式：
+
+\[
+2\cos u\cos v=\cos(u-v)+\cos(u+v),
+\]
+
+代回 \(u=(x+y)/2\)、\(v=(x-y)/2\)，便得到目标公式。
+
+### 14.2 完整例题
+
+\[
+\begin{aligned}
+\cos90^\circ+\cos30^\circ
+&=2\cos\frac{90^\circ+30^\circ}{2}
+       \cos\frac{90^\circ-30^\circ}{2}\\
+&=2\cos60^\circ\cos30^\circ\\
+&=\boxed{\frac{\sqrt3}{2}}.
+\end{aligned}
+\]
+
+### 14.3 当前带提示练习
+
+使用余弦和化积公式改写并计算：
+
+\[
+\boxed{\cos60^\circ+\cos0^\circ}.
+\]
+
+第一步只求平均角 \((60^\circ+0^\circ)/2\) 和半差
+\((60^\circ-0^\circ)/2\)，暂不计算最终值。
+
+学习者首次把两个结果都回答为 \(60^\circ\)，说明暂时把原角直接保留下来，尚未执行
+“先加或减，再除以 \(2\)”这一步。当前只重算平均角
+\((60^\circ+0^\circ)/2\)，确认后再求半差。
+
+经单步提示后，学习者正确得到平均角 \(30^\circ\)。当前继续单独计算半差
+\((60^\circ-0^\circ)/2\)。
+
+学习者随后也正确得到半差 \(30^\circ\)。角度代换当堂已订正，下一步把两个
+\(30^\circ\) 代回余弦和化积公式，暂不跳到最终值。
+
+学习者正确填写两个角均为 \(30^\circ\)，得到
+\(2\cos30^\circ\cos30^\circ\)。当前只剩代入特殊角值并化简。
+
+最终化简无误：
+
+\[
+2\cos30^\circ\cos30^\circ
+=2\cdot\frac{\sqrt3}{2}\cdot\frac{\sqrt3}{2}
+=\boxed{\frac32}.
+\]
+
+本题在分步提示后完成。下一题改为无提示独立变式，以确认能否自行保留平均角、半差
+和外部因子 \(2\)。
+
+### 14.4 独立变式
+
+使用余弦和化积公式，完整计算：
+
+\[
+\boxed{\cos75^\circ+\cos15^\circ}.
+\]
+
+学习者首次写成 \(2\cos90^\circ\cos60^\circ=0\)：能够识别外部因子 \(2\) 和
+两个余弦的乘积结构，但再次把原角的“和”与“差”直接当成平均角与半差，两个位置都
+漏除了 \(2\)。因此本题未通过独立检查，回到具体数轴图订正：
+
+![75 度与 15 度的平均角和半差角](../assets/trigonometry-sum-to-product-75-15-midpoint.svg)
+
+图上 \(15^\circ\) 与 \(75^\circ\) 关于 \(45^\circ\) 对称；中点是平均角
+\(45^\circ\)，从中点到任一端点的距离是半差角 \(30^\circ\)。当前下一步只把这两个
+角代回乘积形式，不先计算最终值。
+
+根据数轴图，学习者正确订正两个角为 \(45^\circ,30^\circ\)，因此乘积形式为
+\(2\cos45^\circ\cos30^\circ\)。当前只剩特殊角代入与最终化简。
+
+最终正确得到：
+
+\[
+2\cdot\frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2}
+=\boxed{\frac{\sqrt6}{2}}.
+\]
+
+本题是在具体数轴图提示后完成，不能作为独立通过证据。换题无提示复测：
+
+\[
+\boxed{\cos105^\circ+\cos15^\circ}.
+\]
+
+要求自行写出平均角、半差角、乘积形式和最终值。
+
+学习者无提示正确完成：平均角为 \(60^\circ\)，半差为 \(45^\circ\)，并写出
+
+\[
+\cos105^\circ+\cos15^\circ
+=2\cos60^\circ\cos45^\circ
+=\boxed{\frac{\sqrt6}{2}}.
+\]
+
+这说明前一题重复漏除以 \(2\) 的问题已当堂订正；由于此前重复发生，余弦和化积暂时
+保持 `Developing`，安排跨日复测。
+
+### 14.5 第二条：余弦差化积
+
+对任意实数角 \(x,y\)：
+
+\[
+\boxed{\cos x-\cos y
+=-2\sin\frac{x+y}{2}\sin\frac{x-y}{2}}.
+\]
+
+它与第一条使用同样的平均角、半差角；新难点只是最前面的负号。令
+\(u=(x+y)/2\)、\(v=(x-y)/2\)，则 \(x=u+v\)、\(y=u-v\)。负号的来源见图：
+
+![余弦差化积公式中的负号来源](../assets/trigonometry-sum-to-product-cosine-difference.svg)
+
+已经学过：
+
+\[
+2\sin u\sin v
+=\cos(u-v)-\cos(u+v)
+=\cos y-\cos x.
+\]
+
+而目标是 \(\cos x-\cos y\)，恰好把两项反过来，所以整体变号：
+
+\[
+\cos x-\cos y=-2\sin u\sin v.
+\]
+
+代回 \(u,v\) 就得到公式。
+
+### 14.6 完整例题
+
+\[
+\begin{aligned}
+\cos75^\circ-\cos15^\circ
+&=-2\sin\frac{75^\circ+15^\circ}{2}
+        \sin\frac{75^\circ-15^\circ}{2}\\
+&=-2\sin45^\circ\sin30^\circ\\
+&=-2\cdot\frac{\sqrt2}{2}\cdot\frac12\\
+&=\boxed{-\frac{\sqrt2}{2}}.
+\end{aligned}
+\]
+
+符号也可直接验算：\(75^\circ>15^\circ\)，且第一象限内余弦随角增大而减小，
+所以 \(\cos75^\circ-\cos15^\circ<0\)。
+
+### 14.7 当前带提示练习
+
+使用余弦差化积公式计算：
+
+\[
+\boxed{\cos90^\circ-\cos30^\circ}.
+\]
+
+第一步只求平均角与半差角。
+
+学习者未作答并明确表示“pass”。按要求结束正弦差化积的当堂练习；该公式只有讲解与
+例题证据，保持 `Developing` 并留待跨日复测，不标记为 `Mastered`。积化和差与和差
+化积的当前桥接单元到此结束，下一步返回三角极限与等价无穷小。
+
+学习者未作答并明确表示“pass”。按要求结束正弦和化积的当堂练习，继续最后一条公式；
+本公式只有讲解与例题证据，没有学习者独立作答证据，因此保持 `Developing`，留待跨日
+复测，不标记为 `Mastered`。
+
+### 14.11 第四条：正弦差化积
+
+对任意实数角 \(x,y\)：
+
+\[
+\boxed{\sin x-\sin y
+=2\cos\frac{x+y}{2}\sin\frac{x-y}{2}}.
+\]
+
+令 \(u=(x+y)/2\)、\(v=(x-y)/2\)，则 \(x=u+v\)、\(y=u-v\)。这次平均角
+放进余弦，半差角放进正弦：
+
+![正弦差化积公式证明图](../assets/trigonometry-sum-to-product-sine-difference.svg)
+
+反向使用第四条积化和差公式：
+
+\[
+2\cos u\sin v=\sin(u+v)-\sin(u-v),
+\]
+
+所以：
+
+\[
+\sin x-\sin y
+=\sin(u+v)-\sin(u-v)
+=2\cos u\sin v.
+\]
+
+代回 \(u,v\) 即得目标公式。
+
+### 14.12 完整例题
+
+\[
+\begin{aligned}
+\sin75^\circ-\sin15^\circ
+&=2\cos\frac{75^\circ+15^\circ}{2}
+       \sin\frac{75^\circ-15^\circ}{2}\\
+&=2\cos45^\circ\sin30^\circ\\
+&=2\cdot\frac{\sqrt2}{2}\cdot\frac12\\
+&=\boxed{\frac{\sqrt2}{2}}.
+\end{aligned}
+\]
+
+### 14.13 当前带提示练习
+
+使用正弦差化积公式计算：
+
+\[
+\boxed{\sin90^\circ-\sin30^\circ}.
+\]
+
+第一步只求平均角与半差角。
+
+学习者无提示正确得到平均角 \(60^\circ\)、半差角 \(30^\circ\)。当前下一步只写
+乘积形式，重点保留公式最前面的负号，暂不计算特殊角值。
+
+学习者正确选择负号，得到
+\(-2\sin60^\circ\sin30^\circ\)。当前只剩特殊角代入与最终化简。
+
+最终正确完成：
+
+\[
+\cos90^\circ-\cos30^\circ
+=-2\cdot\frac{\sqrt3}{2}\cdot\frac12
+=\boxed{-\frac{\sqrt3}{2}}.
+\]
+
+带提示练习完成。当前无提示独立变式：
+
+\[
+\boxed{\cos105^\circ-\cos15^\circ}.
+\]
+
+要求自行写出平均角、半差角、带负号的乘积形式和最终值。
+
+学习者未继续书写该独立变式，明确表示“已掌握，pass”。按学习者要求结束余弦差化积
+的当堂重复训练并继续下一条；本公式保持 `Developing`，留待跨日无提示复测，不标记为
+`Mastered`。
+
+### 14.8 第三条：正弦和化积
+
+对任意实数角 \(x,y\)：
+
+\[
+\boxed{\sin x+\sin y
+=2\sin\frac{x+y}{2}\cos\frac{x-y}{2}}.
+\]
+
+记忆结构不是死背：平均角放进正弦，半差角放进余弦。令
+\(u=(x+y)/2\)、\(v=(x-y)/2\)，则 \(x=u+v\)、\(y=u-v\)：
+
+![正弦和化积公式证明图](../assets/trigonometry-sum-to-product-sine-sum.svg)
+
+反向使用已经证明过的积化和差公式：
+
+\[
+2\sin u\cos v=\sin(u+v)+\sin(u-v),
+\]
+
+所以：
+
+\[
+\sin x+\sin y
+=\sin(u+v)+\sin(u-v)
+=2\sin u\cos v.
+\]
+
+代回 \(u,v\) 即得目标公式。
+
+### 14.9 完整例题
+
+\[
+\begin{aligned}
+\sin75^\circ+\sin15^\circ
+&=2\sin\frac{75^\circ+15^\circ}{2}
+       \cos\frac{75^\circ-15^\circ}{2}\\
+&=2\sin45^\circ\cos30^\circ\\
+&=2\cdot\frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2}\\
+&=\boxed{\frac{\sqrt6}{2}}.
+\end{aligned}
+\]
+
+### 14.10 当前带提示练习
+
+使用正弦和化积公式计算：
+
+\[
+\boxed{\sin90^\circ+\sin30^\circ}.
+\]
+
+第一步只求平均角与半差角。

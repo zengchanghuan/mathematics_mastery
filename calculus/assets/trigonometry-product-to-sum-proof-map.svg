@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">积化和差四条公式的统一证明图</title>
+  <desc id="desc">余弦和差角公式组成第一组，正弦和差角公式组成第二组。每组分别做相加与相减，就能消去一个乘积项并解出另一个乘积项，从而得到四条积化和差公式。</desc>
+  <defs>
+    <style>
+      .title{font:700 29px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .panel-title{font:700 23px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .label{font:19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .source{fill:#eff6ff;stroke:#3b82f6;stroke-width:3}
+      .add{fill:#f0fdf4;stroke:#22c55e;stroke-width:3}
+      .subtract{fill:#fff7ed;stroke:#f97316;stroke-width:3}
+      .panel{fill:none;stroke:#cbd5e1;stroke-width:2}
+      .arrow-add{fill:none;stroke:#16a34a;stroke-width:4;marker-end:url(#green-arrow)}
+      .arrow-sub{fill:none;stroke:#ea580c;stroke-width:4;marker-end:url(#orange-arrow)}
+    </style>
+    <marker id="green-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#16a34a"/>
+    </marker>
+    <marker id="orange-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ea580c"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="900" fill="#ffffff"/>
+  <text x="450" y="44" text-anchor="middle" class="title">积化和差：每组只做“相加”或“相减”</text>
+
+  <rect x="45" y="70" width="810" height="370" rx="20" class="panel"/>
+  <text x="450" y="105" text-anchor="middle" class="panel-title">第一组：余弦和差角公式</text>
+  <text x="450" y="134" text-anchor="middle" class="label">C = cos a cos b，S = sin a sin b</text>
+
+  <rect x="180" y="155" width="540" height="95" rx="15" class="source"/>
+  <text x="450" y="192" text-anchor="middle" class="formula">cos(a−b) = C + S</text>
+  <text x="450" y="226" text-anchor="middle" class="formula">cos(a+b) = C − S</text>
+
+  <path d="M340 250 C300 280 260 290 235 320" class="arrow-add"/>
+  <path d="M560 250 C600 280 640 290 665 320" class="arrow-sub"/>
+  <text x="245" y="286" text-anchor="middle" class="label">两式相加，S 抵消</text>
+  <text x="655" y="286" text-anchor="middle" class="label">第一式减第二式，C 抵消</text>
+
+  <rect x="80" y="320" width="360" height="90" rx="14" class="add"/>
+  <text x="260" y="354" text-anchor="middle" class="formula">cos a cos b</text>
+  <text x="260" y="385" text-anchor="middle" class="formula">= [cos(a−b)+cos(a+b)] / 2</text>
+
+  <rect x="460" y="320" width="360" height="90" rx="14" class="subtract"/>
+  <text x="640" y="354" text-anchor="middle" class="formula">sin a sin b</text>
+  <text x="640" y="385" text-anchor="middle" class="formula">= [cos(a−b)−cos(a+b)] / 2</text>
+
+  <rect x="45" y="465" width="810" height="390" rx="20" class="panel"/>
+  <text x="450" y="500" text-anchor="middle" class="panel-title">第二组：正弦和差角公式</text>
+  <text x="450" y="529" text-anchor="middle" class="label">P = sin a cos b，Q = cos a sin b</text>
+
+  <rect x="180" y="550" width="540" height="95" rx="15" class="source"/>
+  <text x="450" y="587" text-anchor="middle" class="formula">sin(a+b) = P + Q</text>
+  <text x="450" y="621" text-anchor="middle" class="formula">sin(a−b) = P − Q</text>
+
+  <path d="M340 645 C300 675 260 685 235 715" class="arrow-add"/>
+  <path d="M560 645 C600 675 640 685 665 715" class="arrow-sub"/>
+  <text x="245" y="681" text-anchor="middle" class="label">两式相加，Q 抵消</text>
+  <text x="655" y="681" text-anchor="middle" class="label">第一式减第二式，P 抵消</text>
+
+  <rect x="80" y="715" width="360" height="105" rx="14" class="add"/>
+  <text x="260" y="751" text-anchor="middle" class="formula">sin a cos b</text>
+  <text x="260" y="784" text-anchor="middle" class="formula">= [sin(a+b)+sin(a−b)] / 2</text>
+
+  <rect x="460" y="715" width="360" height="105" rx="14" class="subtract"/>
+  <text x="640" y="751" text-anchor="middle" class="formula">cos a sin b</text>
+  <text x="640" y="784" text-anchor="middle" class="formula">= [sin(a+b)−sin(a−b)] / 2</text>
+
+  <text x="450" y="878" text-anchor="middle" class="panel-title">核心：相加消掉异号项；相减消掉同号项</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="720" viewBox="0 0 1050 720" role="img" aria-labelledby="title desc">
+  <title id="title">把正切减正弦从危险差式变成安全乘积</title>
+  <desc id="desc">正切x减正弦x不能直接分别等价替换。先把正切写成正弦除以余弦，提取正弦，再通分，得到正弦x乘一减余弦x再除以余弦x。除以x三次方后可拆成三个因子，分别使用正弦x除以x趋于一、一减余弦x除以二分之x平方趋于一、余弦x趋于一，最终极限为二分之一。</desc>
+  <defs>
+    <style>
+      .title{font:700 29px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .label{font:21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .small{font:18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#475569}
+      .danger{fill:#fef2f2;stroke:#ef4444;stroke-width:3}
+      .algebra{fill:#fff7ed;stroke:#f97316;stroke-width:3}
+      .safe{fill:#f0fdf4;stroke:#22c55e;stroke-width:3}
+      .result{fill:#eff6ff;stroke:#2563eb;stroke-width:3}
+      .arrow{stroke:#64748b;stroke-width:4;fill:none;marker-end:url(#arrowhead)}
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="1050" height="720" fill="#ffffff"/>
+  <text x="525" y="45" text-anchor="middle" class="title">先恒等变形：把“危险的差”变成“安全的乘积”</text>
+
+  <rect x="155" y="75" width="740" height="75" rx="16" class="danger"/>
+  <text x="525" y="107" text-anchor="middle" class="label">不能直接用 tan x~x、sin x~x 做减法</text>
+  <text x="525" y="136" text-anchor="middle" class="formula">tan x − sin x</text>
+
+  <path d="M525 150 L525 185" class="arrow"/>
+
+  <rect x="95" y="190" width="860" height="150" rx="16" class="algebra"/>
+  <text x="525" y="226" text-anchor="middle" class="label">精确恒等变形</text>
+  <text x="525" y="265" text-anchor="middle" class="formula">tan x − sin x = sin x/cos x − sin x</text>
+  <text x="525" y="305" text-anchor="middle" class="formula">= sin x · (1−cos x)/cos x</text>
+  <text x="525" y="331" text-anchor="middle" class="small">现在变成乘积与商，可以分别识别主因子</text>
+
+  <path d="M525 340 L525 375" class="arrow"/>
+
+  <rect x="45" y="380" width="960" height="130" rx="16" class="safe"/>
+  <text x="525" y="416" text-anchor="middle" class="label">除以 x³，并按已经掌握的标准极限拆因子</text>
+  <text x="525" y="458" text-anchor="middle" class="formula">(tan x−sin x)/x³</text>
+  <text x="525" y="493" text-anchor="middle" class="formula">= (sin x/x) · [(1−cos x)/(x²/2)] · [1/(2 cos x)]</text>
+
+  <path d="M525 510 L525 545" class="arrow"/>
+
+  <rect x="95" y="550" width="860" height="95" rx="16" class="result"/>
+  <text x="525" y="588" text-anchor="middle" class="formula">x→0：第一个因子→1，第二个因子→1，第三个因子→1/2</text>
+  <text x="525" y="627" text-anchor="middle" class="formula">所以极限 = 1·1·1/2 = 1/2</text>
+
+  <text x="525" y="687" text-anchor="middle" class="label">策略：看到加减先查抵消；能精确因式分解，就转换成乘除再用等价</text>
+</svg>

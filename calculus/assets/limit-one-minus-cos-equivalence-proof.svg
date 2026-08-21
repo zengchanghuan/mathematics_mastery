@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="700" viewBox="0 0 1050 700" role="img" aria-labelledby="title desc">
+  <title id="title">一减余弦等价于二分之x平方的证明链</title>
+  <desc id="desc">把一减余弦x与二分之x平方的比值，先用半角恒等式改写，再整理为正弦二分之x除以二分之x的平方。当x趋于零时二分之x也趋于零，第一个重要极限使括号内趋于一，因此原比值趋于一。</desc>
+  <defs>
+    <style>
+      .title{font:700 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 25px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .label{font:21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .small{font:19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#475569}
+      .box-definition{fill:#eff6ff;stroke:#2563eb;stroke-width:3}
+      .box-identity{fill:#fff7ed;stroke:#f97316;stroke-width:3}
+      .box-rewrite{fill:#faf5ff;stroke:#8b5cf6;stroke-width:3}
+      .box-limit{fill:#f0fdf4;stroke:#22c55e;stroke-width:3}
+      .box-result{fill:#fef2f2;stroke:#ef4444;stroke-width:3}
+      .arrow{stroke:#64748b;stroke-width:4;fill:none;marker-end:url(#arrowhead)}
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="1050" height="700" fill="#ffffff"/>
+  <text x="525" y="46" text-anchor="middle" class="title">从半角恒等式走到等价无穷小</text>
+
+  <rect x="115" y="75" width="820" height="85" rx="16" class="box-definition"/>
+  <text x="525" y="108" text-anchor="middle" class="label">要证明 f(x) ~ g(x)，就证明它们的比值趋于 1</text>
+  <text x="525" y="143" text-anchor="middle" class="formula">lim [(1−cos x)/(x²/2)] = 1</text>
+
+  <path d="M525 160 L525 195" class="arrow"/>
+
+  <rect x="115" y="200" width="820" height="80" rx="16" class="box-identity"/>
+  <text x="525" y="233" text-anchor="middle" class="label">使用已经证明的半角恒等式</text>
+  <text x="525" y="264" text-anchor="middle" class="formula">1−cos x = 2 sin²(x/2)</text>
+
+  <path d="M525 280 L525 315" class="arrow"/>
+
+  <rect x="85" y="320" width="880" height="105" rx="16" class="box-rewrite"/>
+  <text x="525" y="354" text-anchor="middle" class="label">代入比值并整理</text>
+  <text x="525" y="391" text-anchor="middle" class="formula">[2 sin²(x/2)]/(x²/2) = [sin(x/2)/(x/2)]²</text>
+
+  <path d="M525 425 L525 460" class="arrow"/>
+
+  <rect x="85" y="465" width="880" height="100" rx="16" class="box-limit"/>
+  <text x="525" y="499" text-anchor="middle" class="label">当 x→0 时，令 t=x/2，则 t→0</text>
+  <text x="525" y="537" text-anchor="middle" class="formula">sin t/t → 1，所以 [sin(x/2)/(x/2)]² → 1²=1</text>
+
+  <path d="M525 565 L525 600" class="arrow"/>
+
+  <rect x="175" y="605" width="700" height="70" rx="16" class="box-result"/>
+  <text x="525" y="649" text-anchor="middle" class="formula">1−cos x ~ x²/2　(x→0，必须使用弧度)</text>
+</svg>

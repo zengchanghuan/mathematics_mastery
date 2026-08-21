@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="600" viewBox="0 0 980 600" role="img" aria-labelledby="title desc">
+  <title id="title">余弦和化为乘积的角度中点图</title>
+  <desc id="desc">两个角 x 和 y 的平均角记为 u，半差记为 v。于是 x 等于 u 加 v，y 等于 u 减 v，把余弦和写为一对关于平均角对称的角后，可以用积化和差公式反向得到乘积。</desc>
+  <defs>
+    <style>
+      .title{font:700 29px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .label{font:21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .small{font:19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#475569}
+      .axis{stroke:#64748b;stroke-width:4}
+      .tick{stroke:#0f172a;stroke-width:4}
+      .arc{fill:none;stroke:#8b5cf6;stroke-width:4;marker-end:url(#arrowhead)}
+      .box-change{fill:#eff6ff;stroke:#3b82f6;stroke-width:3}
+      .box-rewrite{fill:#fff7ed;stroke:#f97316;stroke-width:3}
+      .box-result{fill:#f0fdf4;stroke:#22c55e;stroke-width:3}
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8b5cf6"/>
+    </marker>
+  </defs>
+
+  <rect width="980" height="600" fill="#ffffff"/>
+  <text x="490" y="46" text-anchor="middle" class="title">和差化积：先找平均角，再找一半的角度差</text>
+
+  <line x1="180" y1="145" x2="800" y2="145" class="axis"/>
+  <line x1="280" y1="125" x2="280" y2="165" class="tick"/>
+  <line x1="490" y1="120" x2="490" y2="170" class="tick"/>
+  <line x1="700" y1="125" x2="700" y2="165" class="tick"/>
+  <text x="280" y="105" text-anchor="middle" class="formula">y = u−v</text>
+  <text x="490" y="105" text-anchor="middle" class="formula">u</text>
+  <text x="700" y="105" text-anchor="middle" class="formula">x = u+v</text>
+  <text x="385" y="195" text-anchor="middle" class="label">距离 v</text>
+  <text x="595" y="195" text-anchor="middle" class="label">距离 v</text>
+
+  <rect x="120" y="225" width="740" height="90" rx="16" class="box-change"/>
+  <text x="490" y="260" text-anchor="middle" class="formula">u = (x+y)/2，v = (x−y)/2</text>
+  <text x="490" y="294" text-anchor="middle" class="label">因此 x = u+v，y = u−v</text>
+
+  <path d="M490 315 L490 350" class="arc"/>
+
+  <rect x="105" y="355" width="770" height="85" rx="16" class="box-rewrite"/>
+  <text x="490" y="389" text-anchor="middle" class="formula">cos x + cos y = cos(u+v) + cos(u−v)</text>
+  <text x="490" y="421" text-anchor="middle" class="small">反向使用：cos(u−v) + cos(u+v) = 2 cos u cos v</text>
+
+  <path d="M490 440 L490 475" class="arc"/>
+
+  <rect x="90" y="480" width="800" height="85" rx="16" class="box-result"/>
+  <text x="490" y="515" text-anchor="middle" class="formula">cos x + cos y</text>
+  <text x="490" y="548" text-anchor="middle" class="formula">= 2 cos[(x+y)/2] cos[(x−y)/2]</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+  <title id="title">一减余弦极限中的复合分数整理</title>
+  <desc id="desc">先把正弦平方二分之x记作A，将二A除以二分之x平方改写为二A乘以x平方分之二，数字二乘二得到四，A和分母x平方保留，最后把A换回正弦平方二分之x。</desc>
+  <defs>
+    <style>
+      .title{font:700 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 28px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .label{font:21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .small{font:19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#475569}
+      .box-name{fill:#eff6ff;stroke:#2563eb;stroke-width:3}
+      .box-start{fill:#fff7ed;stroke:#f97316;stroke-width:3}
+      .box-flip{fill:#faf5ff;stroke:#8b5cf6;stroke-width:3}
+      .box-combine{fill:#f0fdf4;stroke:#22c55e;stroke-width:3}
+      .box-restore{fill:#fef2f2;stroke:#ef4444;stroke-width:3}
+      .arrow{stroke:#64748b;stroke-width:4;fill:none;marker-end:url(#arrowhead)}
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="650" fill="#ffffff"/>
+  <text x="500" y="45" text-anchor="middle" class="title">先把复杂部分叫作 A，只看分数结构</text>
+
+  <rect x="245" y="70" width="510" height="70" rx="16" class="box-name"/>
+  <text x="500" y="114" text-anchor="middle" class="formula">A = sin²(x/2)</text>
+
+  <path d="M500 140 L500 175" class="arrow"/>
+
+  <rect x="165" y="180" width="670" height="80" rx="16" class="box-start"/>
+  <text x="500" y="230" text-anchor="middle" class="formula">2A ÷ (x²/2)</text>
+
+  <text x="730" y="294" text-anchor="middle" class="small">除以一个分数 = 乘以它的倒数</text>
+  <path d="M500 260 L500 310" class="arrow"/>
+
+  <rect x="165" y="315" width="670" height="80" rx="16" class="box-flip"/>
+  <text x="500" y="365" text-anchor="middle" class="formula">2A × (2/x²)</text>
+
+  <text x="735" y="429" text-anchor="middle" class="small">只合并数字：2×2=4；A 与 x² 原样保留</text>
+  <path d="M500 395 L500 445" class="arrow"/>
+
+  <rect x="260" y="450" width="480" height="70" rx="16" class="box-combine"/>
+  <text x="500" y="494" text-anchor="middle" class="formula">4A/x²</text>
+
+  <text x="700" y="551" text-anchor="middle" class="small">最后把 A 换回 sin²(x/2)</text>
+  <path d="M500 520 L500 565" class="arrow"/>
+
+  <rect x="185" y="570" width="630" height="65" rx="16" class="box-restore"/>
+  <text x="500" y="612" text-anchor="middle" class="formula">4 sin²(x/2)/x²</text>
+</svg>
