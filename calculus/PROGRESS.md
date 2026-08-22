@@ -1,7 +1,7 @@
 ---
 updated: "2026-08-22"
 status: active
-current_track: "三角函数性质与图像补课"
+current_track: "三角函数家族性质与图像桥接"
 ---
 
 # 当前学习位置
@@ -10,7 +10,8 @@ current_track: "三角函数性质与图像补课"
 
 ## 精确停点
 
-当前课程：[导数与微分](02_derivatives/README.md)。
+当前课程：[三角函数性质与反三角函数图像桥接](lessons/trig-functions-and-inverses-graphs.md)。
+该检查门完成后返回：[导数与微分](02_derivatives/README.md) 的反三角函数导数。
 
 当前精确位置：链式法则的复合定义、定义域条件、顺序反例和“串联倍率相乘”的费曼直观
 已完成。学习者已从导数定义写出复合差商，在一级提示下引入
@@ -67,6 +68,19 @@ current_track: "三角函数性质与图像补课"
 限制区间、主值区间、图像对称、端点和渐近线。`ces` 按 \(\csc\) 记录；
 \(\operatorname{arccot}\) 暂采用主值区间 \((0,\pi)\) 的常见高数约定。当前从
 \(\cot x=\cos x/\sin x\) 开始，只检查 \(x=0\) 时分母和定义性。
+
+学习者在跨设备同步后调整学习顺序：先系统复习 \(\sin,\cos,\tan\) 的性质与图像，
+再按家族对应学习
+\(\sin\rightarrow\csc\rightarrow\arcsin\)、
+\(\cos\rightarrow\sec\rightarrow\arccos\)，以及
+\(\tan\leftrightarrow\cot\rightarrow\arctan,\operatorname{arccot}\)。该调整能把
+“函数值取倒数”和“限制区间后取反函数”放在同一张图上比较，并直接服务后续导数与积分。
+此前 \(\cot0\) 检查暂缓，不算作未完成作答。
+
+当前精确停点改为：[三角函数性质与反三角函数图像桥接](lessons/trig-functions-and-inverses-graphs.md)
+的第一层。下一步从单位圆点 \(P=(\cos x,\sin x)\) 出发，把 \(\sin x\) 与
+\(\cos x\) 的定义和两张图像并排复习；完成动机、直观、严格定义和完整例子后，
+再给第一道练习，不直接提问性质表。
 
 已经讲解：
 
