@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="430" viewBox="0 0 1080 430" role="img" aria-labelledby="title desc">
+  <title id="title">反函数导数的三步流程</title>
+  <desc id="desc">以 f(x)=2x+3 和求 g'(7) 为例，依次进行反向找点、求原函数导数、最后取倒数，强调前两步都不取倒数。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#475569"/>
+    </marker>
+    <style>
+      .title { fill: #0f172a; font: 700 27px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .head { fill: #0f172a; font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .body { fill: #334155; font: 19px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .math { fill: #0f172a; font: 24px Georgia, "Times New Roman", serif; }
+      .note { fill: #b91c1c; font: 700 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="430" fill="#f8fafc"/>
+  <text x="42" y="48" class="title">求反函数导数：三个格子必须按顺序走</text>
+  <text x="42" y="80" class="body">例：f(x)=2x+3，g=f⁻¹，求 g′(7)</text>
+
+  <!-- step 1 -->
+  <rect x="40" y="112" width="290" height="230" rx="18" fill="#eff6ff" stroke="#60a5fa" stroke-width="3"/>
+  <circle cx="78" cy="150" r="22" fill="#2563eb"/>
+  <text x="78" y="158" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">1</text>
+  <text x="112" y="157" class="head">反向找点</text>
+  <text x="68" y="202" class="math">f(2)=7</text>
+  <text x="68" y="244" class="math">⇔ g(7)=2</text>
+  <text x="68" y="295" class="note">这里不取倒数</text>
+
+  <!-- arrow 1 -->
+  <path d="M342 227H382" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- step 2 -->
+  <rect x="394" y="112" width="290" height="230" rx="18" fill="#f0fdf4" stroke="#4ade80" stroke-width="3"/>
+  <circle cx="432" cy="150" r="22" fill="#16a34a"/>
+  <text x="432" y="158" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">2</text>
+  <text x="466" y="157" class="head">求原函数导数</text>
+  <text x="422" y="202" class="math">f′(x)=2</text>
+  <text x="422" y="244" class="math">f′(2)=2</text>
+  <text x="422" y="295" class="note">这里仍不取倒数</text>
+
+  <!-- arrow 2 -->
+  <path d="M696 227H736" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <!-- step 3 -->
+  <rect x="748" y="112" width="290" height="230" rx="18" fill="#fff7ed" stroke="#fb923c" stroke-width="3"/>
+  <circle cx="786" cy="150" r="22" fill="#ea580c"/>
+  <text x="786" y="158" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">3</text>
+  <text x="820" y="157" class="head">最后取倒数</text>
+  <text x="776" y="214" class="math">g′(7)=1/f′(2)</text>
+  <text x="776" y="260" class="math">= 1/2</text>
+  <text x="776" y="306" class="note">倒数只出现在这里</text>
+
+  <rect x="235" y="368" width="610" height="42" rx="12" fill="#fee2e2"/>
+  <text x="540" y="396" text-anchor="middle" class="note">不要把最终答案 1/2 提前写进第 2 格</text>
+</svg>

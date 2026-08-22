@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">反函数图像与导数互为倒数</title>
+  <desc id="desc">函数 y=x 平方在非负区间与反函数 y=根号 x 关于 y=x 对称，点二四与点四二互换，对应切线斜率四与四分之一互为倒数。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#334155"/>
+    </marker>
+    <style>
+      .axis { stroke: #334155; stroke-width: 2; marker-end: url(#arrow); }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+      .tick { fill: #475569; font: 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .label { fill: #0f172a; font: 20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .small { fill: #334155; font: 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .formula { fill: #0f172a; font: 21px Georgia, "Times New Roman", serif; }
+    </style>
+  </defs>
+
+  <rect width="960" height="560" fill="#f8fafc"/>
+  <text x="44" y="42" class="label" font-weight="700">反函数：交换横纵坐标，切线斜率互为倒数</text>
+
+  <!-- grid -->
+  <g>
+    <path class="grid" d="M100 80V480 M180 80V480 M260 80V480 M340 80V480 M420 80V480 M500 80V480"/>
+    <path class="grid" d="M100 480H500 M100 400H500 M100 320H500 M100 240H500 M100 160H500 M100 80H500"/>
+  </g>
+
+  <!-- axes -->
+  <path class="axis" d="M82 480H525"/>
+  <path class="axis" d="M100 498V62"/>
+  <text x="530" y="487" class="label">x</text>
+  <text x="89" y="57" class="label">y</text>
+
+  <!-- ticks -->
+  <g class="tick" text-anchor="middle">
+    <text x="180" y="505">1</text><text x="260" y="505">2</text><text x="340" y="505">3</text>
+    <text x="420" y="505">4</text><text x="500" y="505">5</text>
+  </g>
+  <g class="tick" text-anchor="end">
+    <text x="88" y="406">1</text><text x="88" y="326">2</text><text x="88" y="246">3</text>
+    <text x="88" y="166">4</text><text x="88" y="86">5</text>
+  </g>
+
+  <!-- symmetry line -->
+  <path d="M100 480L500 80" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="9 7"/>
+  <text x="430" y="135" class="small" fill="#64748b">y=x</text>
+
+  <!-- f(x)=x^2, x>=0 -->
+  <polyline points="100,480 120,475 140,460 160,435 180,400 200,355 220,300 240,235 260,160 276,93"
+            fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="284" y="105" class="formula" fill="#2563eb">f(x)=x², x≥0</text>
+
+  <!-- inverse sqrt(x) -->
+  <polyline points="100,480 120,440 140,423 180,400 260,367 340,341 420,320 500,301"
+            fill="none" stroke="#dc2626" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="326" y="286" class="formula" fill="#dc2626">f⁻¹(x)=√x</text>
+
+  <!-- tangent lines -->
+  <path d="M220 320L276 96" stroke="#1d4ed8" stroke-width="3"/>
+  <path d="M100 400L500 300" stroke="#b91c1c" stroke-width="3"/>
+
+  <!-- paired points -->
+  <circle cx="260" cy="160" r="7" fill="#1d4ed8"/>
+  <circle cx="420" cy="320" r="7" fill="#b91c1c"/>
+  <text x="202" y="148" class="small" fill="#1d4ed8">A(2,4)</text>
+  <text x="430" y="346" class="small" fill="#b91c1c">B(4,2)</text>
+  <path d="M271 171L405 305" stroke="#64748b" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+
+  <!-- explanation panel -->
+  <rect x="570" y="88" width="342" height="382" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="600" y="130" class="label" font-weight="700">坐标交换</text>
+  <text x="600" y="168" class="formula">f(2)=4</text>
+  <text x="600" y="202" class="formula">f⁻¹(4)=2</text>
+  <path d="M600 224H882" stroke="#e2e8f0" stroke-width="2"/>
+
+  <text x="600" y="264" class="label" font-weight="700">斜率交换“升/跑”</text>
+  <text x="600" y="302" class="formula">f′(2)=4/1=4</text>
+  <text x="600" y="340" class="formula">(f⁻¹)′(4)=1/4</text>
+  <path d="M600 363H882" stroke="#e2e8f0" stroke-width="2"/>
+
+  <text x="600" y="407" class="formula">(f⁻¹)′(f(a)) = 1/f′(a)</text>
+  <text x="600" y="445" class="small">前提：f′(a)≠0，且反函数存在</text>
+</svg>
