@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1050" viewBox="0 0 1200 1050" role="img" aria-labelledby="title desc">
+  <title id="title">cot、sec、csc 的性质与图像</title>
+  <desc id="desc">三幅图分别展示余切、正割和余割函数在负 pi 到 pi 区间的分支、关键点和竖直渐近线。</desc>
+  <defs>
+    <style>
+      .title { fill:#0f172a; font:700 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      .head { fill:#0f172a; font:700 23px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      .body { fill:#334155; font:18px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      .math { fill:#0f172a; font:21px Georgia,"Times New Roman",serif; }
+      .tick { fill:#475569; font:16px Georgia,"Times New Roman",serif; }
+      .curve1 { fill:none; stroke:#2563eb; stroke-width:5; stroke-linecap:round; }
+      .curve2 { fill:none; stroke:#dc2626; stroke-width:5; stroke-linecap:round; }
+      .curve3 { fill:none; stroke:#16a34a; stroke-width:5; stroke-linecap:round; }
+      .axis { stroke:#64748b; stroke-width:2; }
+      .asym { stroke:#f59e0b; stroke-width:3; stroke-dasharray:10 8; }
+      .frame { fill:#fff; stroke:#cbd5e1; stroke-width:2; }
+    </style>
+  </defs>
+  <rect width="1200" height="1050" fill="#f8fafc"/>
+  <text x="44" y="48" class="title">cot、sec、csc：先画渐近线，再画连续分支</text>
+
+  <rect x="55" y="75" width="1090" height="285" rx="18" class="frame"/>
+  <text x="82" y="112" class="head">① y = cot x</text>
+  <text x="300" y="112" class="body">周期 π｜奇函数｜每支递减｜零点 π/2+kπ｜渐近线 x=kπ</text>
+  <line x1="100" y1="220" x2="1100" y2="220" class="axis"/>
+  <line x1="600" y1="125" x2="600" y2="340" class="axis"/>
+  <line x1="100" y1="130" x2="100" y2="340" class="asym"/>
+  <line x1="600" y1="130" x2="600" y2="340" class="asym"/>
+  <line x1="1100" y1="130" x2="1100" y2="340" class="asym"/>
+  <path d="M112 137 C190 142 270 172 350 220 C430 268 510 328 588 335" class="curve1"/>
+  <path d="M612 137 C690 142 770 172 850 220 C930 268 1010 328 1088 335" class="curve1"/>
+  <circle cx="350" cy="220" r="6" fill="#2563eb"/><circle cx="850" cy="220" r="6" fill="#2563eb"/>
+  <text x="90" y="350" class="tick">−π</text><text x="330" y="350" class="tick">−π/2</text>
+  <text x="592" y="350" class="tick">0</text><text x="835" y="350" class="tick">π/2</text><text x="1092" y="350" class="tick">π</text>
+
+  <rect x="55" y="385" width="1090" height="285" rx="18" class="frame"/>
+  <text x="82" y="422" class="head">② y = sec x</text>
+  <text x="300" y="422" class="body">周期 2π｜偶函数｜无零点｜值域 y≤−1 或 y≥1｜渐近线 x=π/2+kπ</text>
+  <line x1="100" y1="535" x2="1100" y2="535" class="axis"/>
+  <line x1="600" y1="435" x2="600" y2="650" class="axis"/>
+  <line x1="350" y1="440" x2="350" y2="650" class="asym"/>
+  <line x1="850" y1="440" x2="850" y2="650" class="asym"/>
+  <path d="M100 590 C190 590 280 615 338 648" class="curve2"/>
+  <path d="M362 447 C430 490 520 480 600 480 C680 480 770 490 838 447" class="curve2"/>
+  <path d="M862 648 C920 615 1010 590 1100 590" class="curve2"/>
+  <circle cx="600" cy="480" r="6" fill="#dc2626"/><circle cx="100" cy="590" r="6" fill="#dc2626"/><circle cx="1100" cy="590" r="6" fill="#dc2626"/>
+  <text x="610" y="478" class="tick">1</text><text x="610" y="596" class="tick">−1</text>
+  <text x="90" y="660" class="tick">−π</text><text x="330" y="660" class="tick">−π/2</text>
+  <text x="592" y="660" class="tick">0</text><text x="835" y="660" class="tick">π/2</text><text x="1092" y="660" class="tick">π</text>
+
+  <rect x="55" y="695" width="1090" height="285" rx="18" class="frame"/>
+  <text x="82" y="732" class="head">③ y = csc x</text>
+  <text x="300" y="732" class="body">周期 2π｜奇函数｜无零点｜值域 y≤−1 或 y≥1｜渐近线 x=kπ</text>
+  <line x1="100" y1="850" x2="1100" y2="850" class="axis"/>
+  <line x1="600" y1="745" x2="600" y2="965" class="axis"/>
+  <line x1="100" y1="750" x2="100" y2="965" class="asym"/>
+  <line x1="600" y1="750" x2="600" y2="965" class="asym"/>
+  <line x1="1100" y1="750" x2="1100" y2="965" class="asym"/>
+  <path d="M112 958 C190 920 270 920 350 920 C430 920 510 920 588 958" class="curve3"/>
+  <path d="M612 742 C690 800 770 800 850 800 C930 800 1010 800 1088 742" class="curve3"/>
+  <circle cx="350" cy="920" r="6" fill="#16a34a"/><circle cx="850" cy="800" r="6" fill="#16a34a"/>
+  <text x="610" y="800" class="tick">1</text><text x="610" y="925" class="tick">−1</text>
+  <text x="90" y="970" class="tick">−π</text><text x="330" y="970" class="tick">−π/2</text>
+  <text x="592" y="970" class="tick">0</text><text x="835" y="970" class="tick">π/2</text><text x="1092" y="970" class="tick">π</text>
+
+  <text x="600" y="1020" text-anchor="middle" class="body">橙色虚线是竖直渐近线；先确定断点与关键点，再连接每个连续分支。</text>
+</svg>

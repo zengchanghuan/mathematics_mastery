@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="540" viewBox="0 0 1100 540" role="img" aria-labelledby="title desc">
+  <title id="title">arcsin 与 sin 的去程返程关系</title>
+  <desc id="desc">数值 x 经过 arcsin 得到角度 y，角度 y 再经过 sin 返回原数值 x。因此 y 等于 arcsin x 与 sin y 等于 x 是同一关系的两个方向。</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#16a34a"/>
+    </marker>
+    <style>
+      .title { fill: #0f172a; font: 700 29px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .head { fill: #0f172a; font: 700 23px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .body { fill: #334155; font: 19px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .small { fill: #475569; font: 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .math { fill: #0f172a; font: 24px Georgia, "Times New Roman", serif; }
+      .accent { fill: #b91c1c; font: 700 21px Georgia, "Times New Roman", serif; }
+    </style>
+  </defs>
+
+  <rect width="1100" height="540" fill="#f8fafc"/>
+  <text x="42" y="50" class="title">arcsin 与 sin：同一条路的去程和返程</text>
+
+  <rect x="55" y="105" width="220" height="110" rx="20" fill="#eff6ff" stroke="#60a5fa" stroke-width="3"/>
+  <text x="165" y="148" text-anchor="middle" class="head">输入数值</text>
+  <text x="165" y="190" text-anchor="middle" class="math">x ∈ [-1,1]</text>
+
+  <rect x="440" y="105" width="240" height="110" rx="20" fill="#fff7ed" stroke="#fb923c" stroke-width="3"/>
+  <text x="560" y="148" text-anchor="middle" class="head">输出角度</text>
+  <text x="560" y="190" text-anchor="middle" class="math">y ∈ [-π/2,π/2]</text>
+
+  <path d="M290 140 H422" stroke="#2563eb" stroke-width="5" marker-end="url(#blueArrow)"/>
+  <text x="356" y="118" text-anchor="middle" class="accent">arcsin</text>
+  <text x="356" y="178" text-anchor="middle" class="math">y = arcsin x</text>
+
+  <path d="M425 200 H293" stroke="#16a34a" stroke-width="5" marker-end="url(#greenArrow)"/>
+  <text x="359" y="236" text-anchor="middle" class="accent">sin</text>
+  <text x="359" y="276" text-anchor="middle" class="math">sin y = x</text>
+
+  <rect x="735" y="88" width="315" height="155" rx="20" fill="#f0fdf4" stroke="#4ade80" stroke-width="3"/>
+  <text x="892" y="130" text-anchor="middle" class="head">一句话</text>
+  <text x="765" y="174" class="body">arcsin 问：“哪个角的</text>
+  <text x="765" y="207" class="body">正弦值等于 x？”</text>
+
+  <rect x="55" y="325" width="995" height="160" rx="22" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="85" y="367" class="head">具体例子：x = 1/2</text>
+  <text x="90" y="422" class="math">1/2</text>
+  <path d="M150 414 H310" stroke="#2563eb" stroke-width="4" marker-end="url(#blueArrow)"/>
+  <text x="230" y="397" text-anchor="middle" class="accent">arcsin</text>
+  <text x="340" y="422" class="math">π/6</text>
+  <path d="M410 414 H570" stroke="#16a34a" stroke-width="4" marker-end="url(#greenArrow)"/>
+  <text x="490" y="397" text-anchor="middle" class="accent">sin</text>
+  <text x="600" y="422" class="math">1/2</text>
+  <text x="700" y="407" class="math">arcsin(1/2)=π/6</text>
+  <text x="700" y="450" class="math">sin(π/6)=1/2</text>
+</svg>

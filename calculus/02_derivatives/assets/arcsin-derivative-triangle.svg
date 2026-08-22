@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650" role="img" aria-labelledby="title desc">
+  <title id="title">arcsin 导数中的单位斜边三角形</title>
+  <desc id="desc">令 y 等于 arcsin x，则 sin y 等于 x。取斜边为 1、对边为 x 的直角三角形，邻边由勾股定理得到根号 1 减 x 平方，因此 cos y 等于根号 1 减 x 平方。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#334155"/>
+    </marker>
+    <style>
+      .title { fill: #0f172a; font: 700 29px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .head { fill: #0f172a; font: 700 23px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .body { fill: #334155; font: 19px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .small { fill: #475569; font: 17px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .math { fill: #0f172a; font: 23px Georgia, "Times New Roman", serif; }
+      .accent { fill: #b91c1c; font: 700 21px Georgia, "Times New Roman", serif; }
+    </style>
+  </defs>
+
+  <rect width="1100" height="650" fill="#f8fafc"/>
+  <text x="42" y="50" class="title">arcsin：根号来自单位斜边三角形</text>
+
+  <rect x="40" y="82" width="625" height="525" rx="22" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+
+  <polygon points="115,505 505,505 505,212" fill="#eff6ff" stroke="#2563eb" stroke-width="4"/>
+  <path d="M475 505 L475 475 L505 475" fill="none" stroke="#0f172a" stroke-width="3"/>
+
+  <path d="M190 505 A75 75 0 0 0 175 460" fill="none" stroke="#f59e0b" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="188" y="480" class="math">y=arcsin x</text>
+
+  <text x="290" y="542" text-anchor="middle" class="accent">邻边 = √(1-x²)</text>
+  <text x="525" y="365" class="accent">对边 = x</text>
+  <text x="292" y="336" transform="rotate(-36.9 292 336)" class="accent">斜边 = 1</text>
+
+  <text x="105" y="532" class="math">A</text>
+  <text x="502" y="532" class="math">B</text>
+  <text x="514" y="207" class="math">C</text>
+
+  <rect x="700" y="100" width="355" height="145" rx="20" fill="#f0fdf4" stroke="#4ade80" stroke-width="3"/>
+  <text x="728" y="139" class="head">反函数关系</text>
+  <text x="728" y="182" class="math">y = arcsin x</text>
+  <text x="728" y="218" class="math">sin y = x</text>
+
+  <rect x="700" y="275" width="355" height="145" rx="20" fill="#fff7ed" stroke="#fb923c" stroke-width="3"/>
+  <text x="728" y="314" class="head">勾股定理</text>
+  <text x="728" y="357" class="math">邻边² = 1-x²</text>
+  <text x="728" y="393" class="math">cos y = √(1-x²)</text>
+
+  <rect x="700" y="450" width="355" height="125" rx="20" fill="#fee2e2" stroke="#f87171" stroke-width="3"/>
+  <text x="878" y="491" text-anchor="middle" class="head">待用反函数求导证明</text>
+  <text x="878" y="538" text-anchor="middle" class="math">dy/dx = 1/√(1-x²)</text>
+</svg>
