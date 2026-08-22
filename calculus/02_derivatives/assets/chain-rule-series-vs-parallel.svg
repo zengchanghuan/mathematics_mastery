@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="530" viewBox="0 0 1080 530" role="img" aria-labelledby="title desc">
+  <title id="title">串联复合与并联相加的变化率对照</title>
+  <desc id="desc">左侧两台函数机器串联，先放大二倍再放大三倍，总倍率六等于二乘三。右侧两个分支并联，各自产生二倍和三倍输出后相加，总倍率五等于二加三。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#475569"/>
+    </marker>
+    <style>
+      .title { fill: #0f172a; font: 700 28px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .head { fill: #0f172a; font: 700 23px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .body { fill: #334155; font: 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .math { fill: #0f172a; font: 24px Georgia, "Times New Roman", serif; }
+      .result { fill: #b91c1c; font: 700 23px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="530" fill="#f8fafc"/>
+  <text x="42" y="48" class="title">变化率为什么有时相乘、有时相加？</text>
+
+  <!-- series panel -->
+  <rect x="40" y="82" width="490" height="380" rx="20" fill="#eff6ff" stroke="#60a5fa" stroke-width="3"/>
+  <text x="285" y="122" text-anchor="middle" class="head">串联：复合函数</text>
+  <text x="285" y="151" text-anchor="middle" class="body">前一台机器的输出，成为后一台机器的输入</text>
+
+  <rect x="72" y="205" width="90" height="70" rx="14" fill="#fff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="117" y="248" text-anchor="middle" class="math">x</text>
+  <path d="M170 240H226" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="238" y="195" width="105" height="90" rx="14" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="290" y="230" text-anchor="middle" class="body">机器 A</text>
+  <text x="290" y="262" text-anchor="middle" class="math">×2</text>
+  <path d="M351 240H407" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="419" y="195" width="80" height="90" rx="14" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="459" y="230" text-anchor="middle" class="body">B</text>
+  <text x="459" y="262" text-anchor="middle" class="math">×3</text>
+
+  <text x="285" y="337" text-anchor="middle" class="math">x → 2x → 6x</text>
+  <text x="285" y="382" text-anchor="middle" class="result">总倍率：2 × 3 = 6</text>
+  <text x="285" y="423" text-anchor="middle" class="body">层与层之间：倍率相乘</text>
+
+  <!-- parallel panel -->
+  <rect x="550" y="82" width="490" height="380" rx="20" fill="#f0fdf4" stroke="#4ade80" stroke-width="3"/>
+  <text x="795" y="122" text-anchor="middle" class="head">并联：函数相加</text>
+  <text x="795" y="151" text-anchor="middle" class="body">同一个输入走两条独立分支，最后合并输出</text>
+
+  <rect x="582" y="225" width="80" height="70" rx="14" fill="#fff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="622" y="268" text-anchor="middle" class="math">x</text>
+  <path d="M670 260C710 260 700 205 744 205" fill="none" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M670 260C710 260 700 315 744 315" fill="none" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="756" y="170" width="105" height="70" rx="14" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="808" y="213" text-anchor="middle" class="math">×2 → 2x</text>
+  <rect x="756" y="280" width="105" height="70" rx="14" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="808" y="323" text-anchor="middle" class="math">×3 → 3x</text>
+  <path d="M870 205C910 205 900 260 940 260" fill="none" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M870 315C910 315 900 260 940 260" fill="none" stroke="#475569" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="975" y="268" text-anchor="middle" class="math">5x</text>
+
+  <text x="795" y="382" text-anchor="middle" class="result">总倍率：2 + 3 = 5</text>
+  <text x="795" y="423" text-anchor="middle" class="body">独立分支之间：贡献相加</text>
+
+  <rect x="220" y="480" width="640" height="38" rx="12" fill="#fee2e2"/>
+  <text x="540" y="506" text-anchor="middle" class="result">复合看串联；和函数看并联</text>
+</svg>
