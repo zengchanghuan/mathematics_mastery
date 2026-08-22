@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="700" viewBox="0 0 1050 700" role="img" aria-labelledby="title desc">
+  <title id="title">从乘积法则推出商法则</title>
+  <desc id="desc">令y等于u除以v，把它改写成u等于y乘v。使用乘积法则得到u导数等于y导数乘v加y乘v导数，移项并除以v解出y导数，再把y换回u除以v，得到u导数乘v减u乘v导数后除以v平方。</desc>
+  <defs>
+    <style>
+      .title{font:700 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 26px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .label{font:21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .small{font:19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#475569}
+      .start{fill:#eff6ff;stroke:#2563eb;stroke-width:3}
+      .rewrite{fill:#fff7ed;stroke:#f97316;stroke-width:3}
+      .product{fill:#f0fdf4;stroke:#22c55e;stroke-width:3}
+      .solve{fill:#faf5ff;stroke:#8b5cf6;stroke-width:3}
+      .result{fill:#fef2f2;stroke:#ef4444;stroke-width:3}
+      .arrow{stroke:#64748b;stroke-width:4;fill:none;marker-end:url(#arrowhead)}
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="1050" height="700" fill="#ffffff"/>
+  <text x="525" y="46" text-anchor="middle" class="title">商法则来自乘积法则：先把“除法”改成“乘法”</text>
+
+  <rect x="205" y="75" width="640" height="75" rx="16" class="start"/>
+  <text x="525" y="121" text-anchor="middle" class="formula">y = u/v　（要求 v≠0）</text>
+
+  <path d="M525 150 L525 185" class="arrow"/>
+
+  <rect x="205" y="190" width="640" height="75" rx="16" class="rewrite"/>
+  <text x="525" y="236" text-anchor="middle" class="formula">改写为：u = yv</text>
+
+  <path d="M525 265 L525 300" class="arrow"/>
+
+  <rect x="135" y="305" width="780" height="90" rx="16" class="product"/>
+  <text x="525" y="340" text-anchor="middle" class="label">对两边求导，并使用乘积法则</text>
+  <text x="525" y="378" text-anchor="middle" class="formula">u′ = y′v + yv′</text>
+
+  <path d="M525 395 L525 430" class="arrow"/>
+
+  <rect x="135" y="435" width="780" height="90" rx="16" class="solve"/>
+  <text x="525" y="470" text-anchor="middle" class="label">移项，再除以 v，解出 y′</text>
+  <text x="525" y="508" text-anchor="middle" class="formula">y′ = (u′−yv′)/v</text>
+
+  <path d="M525 525 L525 560" class="arrow"/>
+
+  <rect x="105" y="565" width="840" height="105" rx="16" class="result"/>
+  <text x="525" y="602" text-anchor="middle" class="label">把 y=u/v 代回并通分</text>
+  <text x="525" y="646" text-anchor="middle" class="formula">(u/v)′ = (u′v − uv′)/v²</text>
+</svg>

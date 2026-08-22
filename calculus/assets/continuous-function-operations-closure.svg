@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="690" viewBox="0 0 1080 690" role="img" aria-labelledby="title desc">
+  <title id="title">连续函数的四则运算与复合规则</title>
+  <desc id="desc">若函数f和g在a点连续，则它们的和、差、积在a点连续；商在分母函数g在a点不等于零时连续。若g在a点连续且f在g(a)点连续，则复合函数f复合g在a点连续。</desc>
+  <defs>
+    <style>
+      .title{font:700 30px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .formula{font:600 24px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#0f172a}
+      .label{font:21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#334155}
+      .small{font:19px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#475569}
+      .input{fill:#eff6ff;stroke:#2563eb;stroke-width:3}
+      .safe{fill:#f0fdf4;stroke:#22c55e;stroke-width:3}
+      .condition{fill:#fff7ed;stroke:#f97316;stroke-width:3}
+      .compose{fill:#faf5ff;stroke:#8b5cf6;stroke-width:3}
+      .warning{fill:#fef2f2;stroke:#ef4444;stroke-width:3}
+      .arrow{stroke:#64748b;stroke-width:4;fill:none;marker-end:url(#arrowhead)}
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="1080" height="690" fill="#ffffff"/>
+  <text x="540" y="46" text-anchor="middle" class="title">连续函数做运算：大多保持连续，但要检查附加条件</text>
+
+  <rect x="175" y="75" width="730" height="80" rx="16" class="input"/>
+  <text x="540" y="108" text-anchor="middle" class="label">已知</text>
+  <text x="540" y="140" text-anchor="middle" class="formula">f、g 都在 x=a 处连续</text>
+
+  <path d="M540 155 L540 195" class="arrow"/>
+
+  <rect x="45" y="200" width="310" height="150" rx="16" class="safe"/>
+  <text x="200" y="240" text-anchor="middle" class="formula">和、差、积</text>
+  <text x="200" y="282" text-anchor="middle" class="formula">f+g，f−g，fg</text>
+  <text x="200" y="325" text-anchor="middle" class="label">在 a 处连续</text>
+
+  <rect x="385" y="200" width="310" height="150" rx="16" class="condition"/>
+  <text x="540" y="240" text-anchor="middle" class="formula">商</text>
+  <text x="540" y="282" text-anchor="middle" class="formula">f/g</text>
+  <text x="540" y="319" text-anchor="middle" class="label">还必须满足 g(a)≠0</text>
+
+  <rect x="725" y="200" width="310" height="150" rx="16" class="compose"/>
+  <text x="880" y="240" text-anchor="middle" class="formula">复合</text>
+  <text x="880" y="282" text-anchor="middle" class="formula">f(g(x))</text>
+  <text x="880" y="315" text-anchor="middle" class="small">g 在 a 连续，且 f 在 g(a) 连续</text>
+
+  <path d="M200 350 C200 405 390 405 500 440" class="arrow"/>
+  <path d="M540 350 L540 435" class="arrow"/>
+  <path d="M880 350 C880 405 690 405 580 440" class="arrow"/>
+
+  <rect x="135" y="445" width="810" height="105" rx="16" class="safe"/>
+  <text x="540" y="481" text-anchor="middle" class="label">共同依据：连续意味着极限可以直接穿过运算</text>
+  <text x="540" y="522" text-anchor="middle" class="formula">lim h(x) = h(a)</text>
+
+  <rect x="135" y="580" width="810" height="80" rx="16" class="warning"/>
+  <text x="540" y="614" text-anchor="middle" class="formula">不能漏条件：分母为 0、根号越界、外层函数在 g(a) 不连续</text>
+  <text x="540" y="646" text-anchor="middle" class="small">先检查定义域与目标点，再使用连续性直接代入</text>
+</svg>
